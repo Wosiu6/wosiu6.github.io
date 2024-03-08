@@ -1,33 +1,45 @@
 footer {
   position: fixed;
   bottom: 0;
-  left: 0; /* Align to left edge for horizontal centering */
-  width: 100%; /* Span the entire width */
-  z-index: 10; /* Adjust as necessary to ensure it's above other elements */
-  background-color: #29374A; /* Nice deep blue background */
-  color: #fff; /* White text for readability */
+  left: 0;
+  /* Align to left edge for horizontal centering */
+  width: 100%;
+  /* Span the entire width */
+  z-index: 10;
+  /* Adjust as necessary to ensure it's above other elements */
+  background-color: #29374A;
+  /* Nice deep blue background */
+  color: #fff;
+  /* White text for readability */
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Vertically center content within footer */
-  border-radius: 5px; /* Add a subtle border radius for smoothness */
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Vertically center content within footer */
+  border-radius: 5px;
+  /* Add a subtle border radius for smoothness */
 }
 
 .social-media {
   display: flex;
-  justify-content: center; /* Maintain centering of icons */
-  margin-top: 0; /* Remove top margin as content is already centered vertically */
+  justify-content: center;
+  /* Maintain centering of icons */
+  margin-top: 0;
+  /* Remove top margin as content is already centered vertically */
 }
 
 .social-media a {
-  margin-right: 1rem; /* Add spacing between icons */
-  color: inherit; /* Inherit text color from footer */
+  margin-right: 1rem;
+  /* Add spacing between icons */
+  color: inherit;
+  /* Inherit text color from footer */
 }
 
 .social-media a:hover {
-  color: #ccc; /* Change icon color on hover */
+  color: #ccc;
+  /* Change icon color on hover */
 }
 
-p{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+p {
+  margin: 0.5rem;
 }
