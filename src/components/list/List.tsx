@@ -11,17 +11,23 @@ interface Item {
 const List: React.FC = () => {
   const items: Item[] = [
     {
-      title: 'First Website',
-      description: 'First website I have written as a university project.',
-      url: 'https://patwos.web.app/',
-      icon: 'images/projectIcons/computer.png',
+      title: 'HLTB .NET API',
+      description: 'HLTB API written in .NET',
+      url: 'https://github.com/Wosiu6/PatAPI',
+      icon: 'images/projectIcons/board-game.png',
     },
     {
       title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
       url: 'https://wosiu6.github.io/PatSite_Razor/ballSimulation',
       icon: 'images/projectIcons/gravity.png',
-    }
+    },
+    {
+      title: 'First Website',
+      description: 'First website I have written as a university project.',
+      url: 'https://patwos.web.app/',
+      icon: 'images/projectIcons/computer.png',
+    },
   ];
 
   return (
