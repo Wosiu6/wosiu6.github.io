@@ -14,13 +14,13 @@ const List: React.FC = () => {
       title: 'First Website',
       description: 'First website I have written as a university project.',
       url: 'https://patwos.web.app/',
-      icon: 'images/projectIcons/oldSite.png',
+      icon: 'images/projectIcons/computer.png',
     },
     {
-      title: 'Blazor Website (with a physical sim)',
+      title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
       url: 'https://wosiu6.github.io/PatSite_Razor/ballSimulation',
-      icon: 'images/projectIcons/balls.png',
+      icon: 'images/projectIcons/gravity.png',
     }
   ];
 

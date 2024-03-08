@@ -2,8 +2,8 @@
   display: flex;
   color: #fff; /* White text for readability */
   border-radius: 5px; /* Add a subtle border radius for smoothness */
-  margin-left: 35vw;
-  margin-right: 35vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
   margin-top: -5rem; /* Adjust based on actual image height */
   z-index: 2; /* Set a higher z-index to bring it to the front */
 }
