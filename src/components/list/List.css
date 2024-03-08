@@ -21,3 +21,8 @@
   width: 100%; /* Ensure the cards take up the full width of their column */
   max-width: 300px; /* Set a max-width for the cards if desired */
  }
+
+ .icon{
+  max-width: 1vh;
+  max-height: 1vh;
+ }

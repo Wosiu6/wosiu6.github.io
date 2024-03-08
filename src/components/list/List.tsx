@@ -9,7 +9,7 @@ interface Item {
 
 const List: React.FC = () => {
  const items: Item[] = [
-    { title: 'Project 1', description: 'Desciption of Project 1', url: 'https://github.com', icon: 'path_to_project_1_image.jpg'},
+    { title: 'First Website', description: 'First website I have written as a university project', url: 'https://patwos.web.app/', icon: 'images/projectIcons/oldSite.png'},
     // Add more items as needed
  ];
 
@@ -21,7 +21,8 @@ const List: React.FC = () => {
           <div key={index} className="col-md-4 mb-4">
             <div className="card h-100">
               <div className="card-body">
-                <h5 className="card-title">{item.title}</h5>
+                <img className='icon' src={item.icon} alt={item.description}></img>
+                <a className="card-title" href={item.url}>{item.title}</a>
               </div>
             </div>
           </div>
