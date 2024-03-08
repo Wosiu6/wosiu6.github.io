@@ -1,28 +1,55 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0; 
- }
- 
- .row {
-  display: flex;
-  flex-wrap: wrap; /* This allows the items to wrap to the next line if the container width is too small */
-  justify-content: center; /* This centers the items horizontally */
-  gap: 20px; /* Adjust the gap between items as needed */
- }
- 
- .col-md-4 {
-  flex: 0 0 auto; /* This ensures the items don't grow or shrink and maintain their base width */
- }
- 
- .card {
-  width: 100%; /* Ensure the cards take up the full width of their column */
-  max-width: 300px; /* Set a max-width for the cards if desired */
- }
+  margin-left: 35vw;
+  margin-right: 35vw;
+}
 
- .icon{
-  max-width: 1vh;
-  max-height: 1vh;
- }
+.project-card {
+  background-color: #5D666F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.card-body {
+  padding: 20px;
+  display: flex; /* Allow stacking elements vertically */
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  border: #141C23;
+  border-style: solid;
+  box-shadow: #312412;
+}
+
+.project-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover; /* Ensures full image coverage within the icon area */
+}
+
+.card-title {
+  font-weight: bold;
+  color: #141C23;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-title:hover {
+  color: #312412; /* Change title color on hover */
+}
+
+a {
+  text-decoration: none; /* Remove underline from link */
+}
+
+h2 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #cfcfcf; /* Adjust text color as needed */
+  border-bottom: 2px solid #484756; /* Accent color for underline */
+  padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
+}

@@ -1,5 +1,4 @@
 .header {
-    position: relative;
     text-align: center;
     background-color: #333;
     color: #fff;
@@ -21,6 +20,5 @@
     bottom: -50px; /* Adjust this value to position the h1 below the bottom edge */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 7;
   }
   

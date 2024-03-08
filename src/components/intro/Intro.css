@@ -1,30 +1,28 @@
 .intro {
   display: flex;
-  color: white;
-  padding: 1rem 0;
+  color: #fff; /* White text for readability */
+  border-radius: 5px; /* Add a subtle border radius for smoothness */
+  margin-left: 35vw;
+  margin-right: 35vw;
+  margin-top: -5rem; /* Adjust based on actual image height */
+  z-index: 2; /* Set a higher z-index to bring it to the front */
 }
 
 .intro img {
-  border-radius: 25%;
-  width: 8rem;
-  height: 8rem;
-}
+  border-radius: 10%; /* Circular image */
+  width: 10rem; /* Adjusted width for potentially larger avatars */
+  height: 10rem; /* Adjusted height for potentially larger avatars */
+  object-fit: cover; /* Ensure image fills the entire area while maintaining aspect ratio */
+  margin-right: 2rem; /* Spacing between image and text */
 
+}
 
 .intro h1 { /* Styles for the text content below */
-  margin-left: 0.2rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  align-self: center;
-  line-height: 1.5;
+  font-size: 1.5rem; /* Slightly larger font size for emphasis */
+  font-weight: bold; /* Bold text for prominence */
+  letter-spacing: 0.1rem; /* Increased letter spacing for better readability */
+  text-transform: uppercase; /* All uppercase for a strong statement */
+  line-height: 1.6; /* Slightly increased line-height for better vertical spacing */
 }
 
-.intro .content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Remove the unused .intro .content selector */

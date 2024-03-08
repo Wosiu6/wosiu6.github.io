@@ -1,35 +1,53 @@
 import React from 'react';
 import './List.css';
+
 interface Item {
- title: string;
- description: string;
- icon: string;
- url: string;
+  title: string;
+  description: string;
+  icon: string;
+  url: string;
 }
 
 const List: React.FC = () => {
- const items: Item[] = [
-    { title: 'First Website', description: 'First website I have written as a university project', url: 'https://patwos.web.app/', icon: 'images/projectIcons/oldSite.png'},
-    // Add more items as needed
- ];
+  const items: Item[] = [
+    {
+      title: 'First Website',
+      description: 'First website I have written as a university project.',
+      url: 'https://patwos.web.app/',
+      icon: 'images/projectIcons/oldSite.png',
+    },
+    {
+      title: 'Blazor Website (with a physical sim)',
+      description: 'Razor website I have written to learn something new.',
+      url: 'https://wosiu6.github.io/PatSite_Razor/ballSimulation',
+      icon: 'images/projectIcons/balls.png',
+    }
+  ];
 
- return (
+  return (
     <div className="container py-5">
-      <h2 className="text-center">Portfolio</h2>
+      <h2 className="text-center">And what has he been up to...</h2>
       <div className="row">
         {items.map((item, index) => (
-          <div key={index} className="col-md-4 mb-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <img className='icon' src={item.icon} alt={item.description}></img>
-                <a className="card-title" href={item.url}>{item.title}</a>
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card h-100 text-decoration-none"
+          >
+            <div key={index} className="col-md-4 mb-4">
+              <div className="project-card h-100">
+                <div className="card-body d-flex flex-column">
+                  <img className="project-icon" src={item.icon} alt={item.description} />
+                  <p className="card-title mt-auto">{item.title}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
- );
+  );
 };
 
 export default List;
