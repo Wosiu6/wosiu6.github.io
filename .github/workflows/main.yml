@@ -1,28 +1,39 @@
-name: publish to gh pages
+name: Build and Deploy
 
 on:
   push:
-    branches:
-      - main
-
+    branches: ["main"]
+    
 env:
   CI: false
+  
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-    steps:
-      # Checkout the code
-    - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - run: npm i
-    - run: npm ci
-    - run: npm run build
-    - run: git config user.name github-actions
-    - run: git config user.email github-actions@github.com
-    - run: git --work-tree build add --all
-    - run: git commit -m "Automatic Build and Deploy run by GitHub Actions"
-    - run: git push origin HEAD:gh-pages --force
-    
+    strategy:
+      matrix:
+        node-version: [20.11.1]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: "npm"
+    - name: Install Packages
+      run: npm ci
+    - name: Build
+      run: npm run build
+    #- name: Test
+    #  run: npm test
+    - name: Deploy🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: build
