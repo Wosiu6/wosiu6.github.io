@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1.25rem 0;
+    overflow: hidden; /* Ensure smooth transition overflow */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    transition: all 1s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    border-bottom: black;
+    box-shadow: inset;
+  }
+  
+  .header-content {
+    position: absolute;
+    bottom: -50px; /* Adjust this value to position the h1 below the bottom edge */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+  }
+  
