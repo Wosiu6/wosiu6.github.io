@@ -43,3 +43,25 @@ footer {
 p {
   margin: 0.5rem;
 }
+
+.attributions {
+  position: absolute;
+  /* Position element relative to its container */
+  right: 0.1rem;
+  /* Distance from the right edge */
+  bottom: 0.1rem;
+  /* Distance from the bottom edge */
+  font-size: 0.7rem;
+  /* Adjust font size as needed */
+}
+
+.attributions a {
+  color: #ccc;
+  /* Light text color for better contrast */
+  text-decoration: none;
+}
+
+.attributions a:visited {
+  color: #ccc;
+  /* Light text color for better contrast */
+}
