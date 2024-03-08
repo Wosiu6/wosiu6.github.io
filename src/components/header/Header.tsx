@@ -7,10 +7,8 @@ const Header: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(images[0]);
 
   useEffect(() => {
-    const imagesNested = ['background_1.jpg', 'background_2.jpg', 'background_3.jpg', 'background_4.jpg'];
-
     const interval = setInterval(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % imagesNested.length);
+      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 15000); // 15sec
 
     return () => clearInterval(interval);
