@@ -53,3 +53,30 @@ h2 {
   border-bottom: 2px solid #484756; /* Accent color for underline */
   padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-card {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .card-body {
+    align-items: flex-start; /* Align content to the left on mobile */
+  }
+
+  .project-icon {
+    width: 30px;
+    height: 30px; /* Adjust image size for mobile */
+  }
+
+  h2 {
+    font-size: 1rem; /* Further reduce heading size for mobile */
+    margin-bottom: 1rem; /* Adjust margin for better spacing */
+  }
+}
