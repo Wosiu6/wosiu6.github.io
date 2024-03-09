@@ -2,8 +2,10 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import List from './components/list/List'
 import Intro from './components/intro/Intro'
+import MiscList from './components/miscList/MiscList'
+import AboutText from './components/aboutText/AboutText'
 
-function App() {
+export function Home() {
   return (
     <div className="App">
       <Header/>
@@ -14,4 +16,25 @@ function App() {
   );
 }
 
-export default App;
+export function About(){
+  return (
+    <div className="App">
+      <Header/>
+      <AboutText />
+      <Footer/>
+    </div>
+  ); 
+}
+
+export function Misc(){
+  return (
+    <div className="App">
+      <Header/>
+      <MiscList />
+      <Footer/>
+    </div>
+  ); 
+}
+
+export default Home;
+

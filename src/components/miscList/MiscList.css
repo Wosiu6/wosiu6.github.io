@@ -1,0 +1,82 @@
+.container {
+  margin-left: 40vw;
+  margin-right: 40vw;
+}
+
+.project-card {
+  background-color: #5D666F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.card-body {
+  padding: 20px;
+  display: flex; /* Allow stacking elements vertically */
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  border: #141C23;
+  border-style: solid;
+  box-shadow: #312412;
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover; /* Ensures full image coverage within the icon area */
+}
+
+.card-title {
+  font-weight: bold;
+  color: #141C23;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-title:hover {
+  color: #312412; /* Change title color on hover */
+}
+
+a {
+  text-decoration: none; /* Remove underline from link */
+}
+
+h2 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #cfcfcf; /* Adjust text color as needed */
+  border-bottom: 2px solid #484756; /* Accent color for underline */
+  padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-card {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .card-body {
+    align-items: flex-start; /* Align content to the left on mobile */
+  }
+
+  .project-icon {
+    width: 30px;
+    height: 30px; /* Adjust image size for mobile */
+  }
+
+  h2 {
+    font-size: 1rem; /* Further reduce heading size for mobile */
+    margin-bottom: 1rem; /* Adjust margin for better spacing */
+  }
+}
