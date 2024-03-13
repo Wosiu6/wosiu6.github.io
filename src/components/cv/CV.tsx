@@ -8,7 +8,7 @@ const CV: React.FC = () => {
   return (
     <div className="cv">
       <Document file="cv.pdf">
-        <Page pageNumber={1} scale={1.5} renderTextLayer={false} renderAnnotationLayer={true} />
+        <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons'><a
         href="https://www.overleaf.com/read/nqffmtpvswng#038d1d"
