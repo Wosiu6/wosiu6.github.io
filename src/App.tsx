@@ -4,6 +4,7 @@ import List from './components/list/List'
 import Intro from './components/intro/Intro'
 import MiscList from './components/miscList/MiscList'
 import AboutText from './components/aboutText/AboutText'
+import CVDocument from './components/cv/CV'
 
 export function Home() {
   return (
@@ -21,6 +22,15 @@ export function About(){
     <div className="App">
       <Header/>
       <AboutText />
+      <Footer/>
+    </div>
+  ); 
+}
+
+export function CV(){
+  return (
+    <div className="App">
+      <CVDocument />
       <Footer/>
     </div>
   ); 

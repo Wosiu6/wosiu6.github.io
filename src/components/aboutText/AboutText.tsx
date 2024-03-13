@@ -8,6 +8,14 @@ const AboutText: React.FC = () => {
       <div className="row">
         <p>I do backend. I do not know why I made this so pretty.</p>
       </div>
+      <a
+      href="#/CV/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cvLink"
+    >
+      View My CV
+    </a>
     </div>
   );
 }

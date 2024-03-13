@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         <a href="https://www.last.fm/user/wosiu6" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLastfm} />
         </a>
-        <a href="Patryk Wos - Resume - Software Engineer.txt" target="_blank" title="CV" rel="noopener noreferrer">
+        <a href="#/CV/" title="CV" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFile} />
         </a>
       </div>

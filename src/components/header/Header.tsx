@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   }, [imageIndex, images]);
 
   return (
-    <header className="header" style={{ backgroundImage: `url(images/${currentImage})` }} />
+    <header className={"header"} style={{ backgroundImage: `url(images/${currentImage})` }} />
   );
 };
 
