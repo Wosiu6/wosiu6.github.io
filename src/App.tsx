@@ -21,6 +21,8 @@ ga4react.initialize().then((ga4) => {
   console.error(err)
 })
 
+ga4react.pageview(window.location.pathname + window.location.search);
+
 export function Home() {
   return (
     <div className="App">
