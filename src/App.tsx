@@ -5,48 +5,60 @@ import Intro from './components/intro/Intro'
 import MiscList from './components/miscList/MiscList'
 import AboutText from './components/aboutText/AboutText'
 import CVDocument from './components/cv/CV'
-import ReactGA from "react-ga4";
+import GA4React from "ga-4-react";
 
-ReactGA.initialize("G-LEDJEQBVDX");
+const ga4react = new GA4React(
+  'G-LEDJEQBVDX',
+  { /* ga custom config, optional */ },
+  [ /* additional code, optional */],
+  5000 /* timeout, optional, defaults is 5000 */
+);
+
+ga4react.initialize().then((ga4) => {
+  ga4.pageview('path')
+  ga4.gtag('event', 'pageview', 'path') // or your custom gtag event
+}, (err) => {
+  console.error(err)
+})
 
 export function Home() {
   return (
     <div className="App">
-      <Header/>
-      <Intro/>
-      <List/>
-      <Footer/>
+      <Header />
+      <Intro />
+      <List />
+      <Footer />
     </div>
   );
 }
 
-export function About(){
+export function About() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <AboutText />
-      <Footer/>
+      <Footer />
     </div>
-  ); 
+  );
 }
 
-export function CV(){
+export function CV() {
   return (
     <div className="App">
       <CVDocument />
-      <Footer/>
+      <Footer />
     </div>
-  ); 
+  );
 }
 
-export function Misc(){
+export function Misc() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <MiscList />
-      <Footer/>
+      <Footer />
     </div>
-  ); 
+  );
 }
 
 export default Home;
