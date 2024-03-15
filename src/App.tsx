@@ -5,6 +5,9 @@ import Intro from './components/intro/Intro'
 import MiscList from './components/miscList/MiscList'
 import AboutText from './components/aboutText/AboutText'
 import CVDocument from './components/cv/CV'
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-LEDJEQBVDX");
 
 export function Home() {
   return (
