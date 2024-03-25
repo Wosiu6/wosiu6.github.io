@@ -40,7 +40,7 @@ const CV: React.FC = () => {
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons'><a
-        href="https://www.overleaf.com/read/nqffmtpvswng#038d1d"
+        href="https://www.overleaf.com/read/csrkvckzjnyk#96031f"
         target="_blank"
         rel="noopener noreferrer"
         className="cvLink"
