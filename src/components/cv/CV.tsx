@@ -36,7 +36,7 @@ const CV: React.FC = () => {
 
   return (
     <div className="cv">
-      <Document file="cv.pdf">
+      <Document file="Patryk_Wos_CV.pdf">
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons'><a
