@@ -15,7 +15,7 @@ const ga4react = new GA4React(
 );
 
 ga4react.initialize().then((ga4) => {
-  ga4.pageview('path')
+  ga4.pageview(window.location.pathname + window.location.search);
   window.gtag("config", 'G-LEDJEQBVDX', {
     page_location: 'https://wosiu6.github.io/',
   });
