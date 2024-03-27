@@ -7,7 +7,7 @@ const AboutText: React.FC = () => {
       <h2 className="text-center">About</h2>
       <div className="row">
         <p>My name is Patryk. I like playing games and staying active. I am a big fan of technology and anything futuristic, Cyberpunk for instance.</p>
-        <p>I mainly do backend. I do not know why I decided to put so much effort into this site.</p>
+        <p>I enjoy doing backend. Do not ask me why I wrote any css for this site.</p>
       </div>
       <a
       href="#/CV/"
