@@ -1,10 +1,18 @@
 import React from 'react';
 import './AboutText.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 const AboutText: React.FC = () => {
   return (
     <div className="container py-5">
-      <h2 className="text-center">About</h2>
+      <div className='titleContainer'>
+        <a className="backIcon" href="">
+            <FontAwesomeIcon icon={faArrowLeft} />
+        </a>
+        <h2 className="text-center">About</h2>
+      </div>
       <div className="row">
         <p>By day, I'm a code-slinging software engineer who thrives in the back-end. When I'm not wrestling with servers and databases, you'll probably find me:
           <ul>

@@ -45,15 +45,6 @@ a {
   text-decoration: none; /* Remove underline from link */
 }
 
-h2 {
-  font-size: 1.2rem; /* Adjust font size as needed */
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #cfcfcf; /* Adjust text color as needed */
-  border-bottom: 2px solid #484756; /* Accent color for underline */
-  padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
-}
-
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
 

@@ -14,9 +14,6 @@ const Footer: React.FC = () => {
     <footer className="text-center bg-dark text-white py-3">
       <p>© 2024 Patryk Wos</p>
       <div className="social-media">
-        <a href="#/">
-          <FontAwesomeIcon icon={faHome} />
-        </a>
         <a href="https://www.facebook.com/wosiu6" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />
         </a>

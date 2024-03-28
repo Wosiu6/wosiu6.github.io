@@ -50,7 +50,9 @@ const List: React.FC = () => {
 
   return (
     <div className="container py-5">
-      <h2 className="text-center">And what has he been up to...</h2>
+      <div className='titleContainer'>
+        <h2 className="text-center">And what has he been up to...</h2>
+      </div>
       <div className="row">
         {items.map((item, index) => (
           <a

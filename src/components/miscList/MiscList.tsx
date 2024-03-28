@@ -1,6 +1,9 @@
 import React from 'react';
 import './MiscList.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 interface Item {
   title: string;
   description: string;
@@ -24,12 +27,24 @@ const MiscList: React.FC = () => {
       url: 'https://steamcommunity.com/id/Wosiu6',
       icon: 'images/projectIcons/steam-logo.png',
       openInNewPage: true
+    },
+    {
+      title: 'About this site',
+      description: 'PatSite',
+      url: '#/Misc/AboutSite',
+      icon: 'images/projectIcons/website.png',
+      openInNewPage: false
     }
   ];
 
   return (
     <div className="container py-5">
-      <h2 className="text-center">What have we here...</h2>
+      <div className='titleContainer'>
+        <a className="backIcon" href="">
+            <FontAwesomeIcon icon={faArrowLeft} />
+        </a>
+        <h2 className="text-center">What have we here...</h2>
+      </div>
       <div className="row">
         {items.map((item, index) => (
           <a

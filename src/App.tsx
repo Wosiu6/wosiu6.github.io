@@ -6,6 +6,8 @@ import MiscList from './components/miscList/MiscList'
 import AboutText from './components/aboutText/AboutText'
 import CVDocument from './components/cv/CV'
 import GA4React from "ga-4-react";
+import SiteDesciprtion from './components/aboutSite/AboutSite'
+import NotFound from './components/notFound/NotFound'
 
 const ga4react = new GA4React(
   'G-LEDJEQBVDX',
@@ -14,12 +16,7 @@ const ga4react = new GA4React(
   5000 /* timeout, optional, defaults is 5000 */
 );
 
-ga4react.initialize().then((ga4) => {
-  ga4.pageview(window.location.pathname + window.location.search);
-  window.gtag("config", 'G-LEDJEQBVDX', {
-    page_location: 'https://wosiu6.github.io/',
-  });
-})
+ga4react.initialize();
 
 export function Home() {
   return (
@@ -37,6 +34,26 @@ export function About() {
     <div className="App">
       <Header />
       <AboutText />
+      <Footer />
+    </div>
+  );
+}
+
+export function AboutSite() {
+  return (
+    <div className="App">
+      <Header />
+      <SiteDesciprtion />
+      <Footer />
+    </div>
+  );
+}
+
+export function NotFoundPage() {
+  return (
+    <div className="App">
+      <Header />
+      <NotFound />
       <Footer />
     </div>
   );
