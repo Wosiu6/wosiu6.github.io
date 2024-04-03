@@ -12,9 +12,8 @@ export function useAnalytics() {
 
   React.useEffect(() => {
     const path = location.pathname + location.search
-    const hardcodedPath = "https://wosiu6.github.io/"
     console.log(path);
-    analytics.sendPageview(path == '/' ? hardcodedPath : path)
+    analytics.sendPageview(path)
   }, [location])
 }
 

@@ -9,7 +9,8 @@ export const sendEvent = (name: string) => ga4.event('screen_view', {
   screen_name: name,
 })
 
-export const sendPageview = (path: string) => ga4.send({ 
-  hitType: 'pageview', 
-  page: path 
-})
+export const sendPageview = (path: string) => ga4.send({
+  hitType: 'pageview',
+  page: path,
+  page_location: window.location.href,
+});
