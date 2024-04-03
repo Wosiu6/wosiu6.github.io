@@ -13,7 +13,7 @@ export function useAnalytics() {
   React.useEffect(() => {
     const path = location.pathname + location.search
     const hardcodedPath = "https://wosiu6.github.io/"
-    analytics.sendPageview(path ?? hardcodedPath)
+    analytics.sendPageview(path == '/' ? hardcodedPath : path)
   }, [location])
 }
 
