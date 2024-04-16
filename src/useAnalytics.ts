@@ -11,7 +11,8 @@ export function useAnalytics() {
   React.useEffect(() => {
     const path = window.location.href;
     console.log(path);
-    analytics.sendPageview(path)
+    analytics.sendPageview(path);
+    analytics.sendEvent("page_view");
   }, [window.location.href])
 }
 
