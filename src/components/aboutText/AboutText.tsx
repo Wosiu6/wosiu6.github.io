@@ -21,9 +21,9 @@ const AboutText: React.FC = () => {
             <li><b>Building things (not just in code):</b> I love tinkering and creating, whether it's a new website (like this one!), a personal project, or just messing around with new tech.</li>
           </ul>
         </p>
-        <h2>So, why React and the excessive CSS?</h2>
+        <h2>So, why React?</h2>
         <p>
-          Honestly, good question. Let's just say I like a little challenge, and sometimes the front-end world beckons... even if it involves wrangling stylesheets.
+          Honestly, good question. I like to learn new things, and sometimes the front-end world beckons... even if it involves wrangling stylesheets.
         </p>
       </div>
       <a
