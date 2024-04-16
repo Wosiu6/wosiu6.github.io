@@ -12,7 +12,7 @@ export function useAnalytics() {
     const path = window.location.href;
     console.log(path);
     analytics.sendPageview(path)
-  }, [location])
+  }, [window.location.href])
 }
 
 export default useAnalytics
