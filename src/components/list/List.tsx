@@ -12,25 +12,11 @@ interface Item {
 const List: React.FC = () => {
   const items: Item[] = [
     {
-      title: 'HLTB .NET API',
-      description: 'HLTB API written in .NET',
-      url: 'https://github.com/Wosiu6/PatAPI',
-      icon: 'images/projectIcons/board-game.png',
-      openInNewPage: true
-    },
-    {
-      title: 'Physical Simulation',
-      description: 'Razor website I have written to learn something new.',
-      url: 'https://wosiu6.github.io/PatSite_Razor/ballSimulation',
-      icon: 'images/projectIcons/gravity.png',
-      openInNewPage: true
-    },
-    {
-      title: 'First Website',
-      description: 'First website I have written as a university project.',
-      url: 'https://patwos.web.app/',
-      icon: 'images/projectIcons/computer.png',
-      openInNewPage: true
+      title: 'Projects',
+      description: 'projects',
+      url: '#/ProjectList/',
+      icon: 'images/projectIcons/portfolio.png',
+      openInNewPage: false
     },
     {
       title: 'More about me',
@@ -51,7 +37,7 @@ const List: React.FC = () => {
   return (
     <div className="container py-5">
       <div className='titleContainer'>
-        <h2 className="text-center">And what has he been up to...</h2>
+        <h2 className="text-center">And what has he been up to 👷‍♂️</h2>
       </div>
       <div className="row">
         {items.map((item, index) => (

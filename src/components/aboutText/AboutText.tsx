@@ -21,7 +21,7 @@ const AboutText: React.FC = () => {
             <li><b>Building things (not just in code):</b> I love tinkering and creating, whether it's a new website (like this one!), a personal project, or just messing around with new tech.</li>
           </ul>
         </p>
-        <h2>So, why React?</h2>
+        <h3>So, why React?</h3>
         <p>
           Honestly, good question. I like to learn new things, and sometimes the front-end world beckons... even if it involves wrangling stylesheets.
         </p>

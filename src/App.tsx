@@ -8,6 +8,10 @@ import CVDocument from './components/cv/CV'
 import SiteDesciprtion from './components/aboutSite/AboutSite'
 import NotFound from './components/notFound/NotFound'
 import useAnalytics from './useAnalytics'
+import ProjectList from './components/projects/ProjectList'
+import ScreenLockProject from './components/projects/ScreenLockProject'
+import HLTBProject from './components/projects/HTLBProject'
+import RazorBallsProject from './components/projects/RazorBallsProject'
 
 
 export function Home() {
@@ -66,6 +70,46 @@ export function Misc() {
     <div className="App">
       <Header />
       <MiscList />
+      <Footer />
+    </div>
+  );
+}
+
+export function Projects() {
+  return (
+    <div className="App">
+      <Header />
+      <ProjectList />
+      <Footer />
+    </div>
+  );
+}
+
+export function ScreenLock() {
+  return (
+    <div className="App">
+      <Header />
+      <ScreenLockProject />
+      <Footer />
+    </div>
+  );
+}
+
+export function HLTB() {
+  return (
+    <div className="App">
+      <Header />
+      <HLTBProject />
+      <Footer />
+    </div>
+  );
+}
+
+export function Balls() {
+  return (
+    <div className="App">
+      <Header />
+      <RazorBallsProject />
       <Footer />
     </div>
   );
