@@ -22,6 +22,10 @@ const SiteDesciprtion: React.FC = () => {
         <p>
           It deploys to github pages automatically using Actions that is why I push directly to main.
         </p>
+        <h3>So, why React?</h3>
+        <p>
+          Honestly, good question. I like to learn new things, and sometimes the front-end world beckons... even if it involves wrangling stylesheets.
+        </p>
       </div>
       <a
         href="https://github.com/Wosiu6/wosiu6.github.io"

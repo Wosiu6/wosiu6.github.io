@@ -14,16 +14,12 @@ const AboutText: React.FC = () => {
         <h2 className="text-center">About</h2>
       </div>
       <div className="row">
-        <p>By day, I'm a code-slinging software engineer who thrives in the back-end. When I'm not wrestling with servers and databases, you'll probably find me:
+        <p>When I'm not crafting software solutions, I'm likely:
           <ul>
-            <li><b>Leveling up (in real life, not just video games!):</b> Gotta stay active, you know? Whether it's hitting the gym, exploring new trails, or just getting some sunshine, I love keeping my body moving.</li>
-            <li><b>Geeking out over the future:</b> I'm a total tech junkie, always fascinated by the latest advancements. AI, high-performance computing, you name it – if it's pushing the boundaries, I'm there! (Think Cyberpunk 2077, but hopefully with a smoother launch.)</li>
-            <li><b>Building things (not just in code):</b> I love tinkering and creating, whether it's a new website (like this one!), a personal project, or just messing around with new tech.</li>
+            <li><b>Staying active:</b> Whether it's hitting the gym, exploring nature, or soaking up some sun, taking care of my physical health is important to me.</li>
+            <li><b>Futuristic:</b> I'm a total tech enthusiast, always curious about the latest breakthroughs. AI, high-performance computing - anything that pushes the boundaries excites me! (Think less Cyberpunk 2077 launch and more seamless innovation.)</li>
+            <li><b>Building (beyond code):</b> I enjoy hands-on creation, whether it's building a new website, tackling a personal project, or experimenting with new technology.</li>
           </ul>
-        </p>
-        <h3>So, why React?</h3>
-        <p>
-          Honestly, good question. I like to learn new things, and sometimes the front-end world beckons... even if it involves wrangling stylesheets.
         </p>
       </div>
       <a
