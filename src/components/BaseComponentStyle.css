@@ -1,0 +1,10 @@
+.cvLink {
+    color: #bada55; /* Cyberpunk green */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #bada55;
+    display: inline-block;
+    margin-top: 1rem;
+  }

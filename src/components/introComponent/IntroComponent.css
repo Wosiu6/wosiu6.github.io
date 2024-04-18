@@ -1,0 +1,88 @@
+.intro {
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  display: flex;
+  margin-top: -5rem;
+  z-index: 2;
+}
+
+.intro img {
+  border-radius: 10%;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+
+}
+
+.intro h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 1920px) {
+  .intro {
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .intro {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 0.8rem;
+  }
+
+  .intro img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .intro h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: -2.3rem;
+    font-size: 0.5rem;
+  }
+
+  .intro img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .intro h1 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+}

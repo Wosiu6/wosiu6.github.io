@@ -1,119 +1,72 @@
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
-import List from './components/list/List'
-import Intro from './components/intro/Intro'
-import MiscList from './components/miscList/MiscList'
-import AboutText from './components/aboutText/AboutText'
-import CVDocument from './components/cv/CV'
-import SiteDesciprtion from './components/aboutSite/AboutSite'
-import NotFound from './components/notFound/NotFound'
-import useAnalytics from './useAnalytics'
-import ProjectList from './components/projects/ProjectList'
-import ScreenLockProject from './components/projects/ScreenLockProject'
-import HLTBProject from './components/projects/HTLBProject'
-import RazorBallsProject from './components/projects/RazorBallsProject'
+import React from 'react';
+import useAnalytics from './useAnalytics';
+import HeaderComponent from './components/headerComponent/HeaderComponent';
+import FooterComponent from './components/footerComponent/FooterComponent';
+import IntroComponent from './components/introComponent/IntroComponent';
+import HomepageComponent from './components/homepageComponent/HomepageComponent';
+import AboutMeComponent from './components/aboutMeComponent/AboutMeComponent';
+import AboutSiteComponent from './components/aboutSiteComponent/AboutSiteComponent';
+import NotFoundComponent from './components/notFoundComponent/NotFoundComponent';
+import CVDisplayComponent from './components/cvDisplayComponent/CVDisplayComponent';
+import MiscListComponent from './components/miscListComponent/MistListComponent';
+import PorfolioListComponent from './components/portfolioListComponent/PortfolioListComponent';
+import ScreenLockProjectComponent from './components/projectsComponents/ScreenLockProjectComponent';
+import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
+import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
 
+interface AppLayoutProps {
+  children: React.ReactNode;
+  isHeaderShort?: boolean;
+}
 
-export function Home() {
+const AppLayout: React.FC<AppLayoutProps> = ({ children, isHeaderShort = false }) => (
+  <div className="App">
+    <HeaderComponent isShort={isHeaderShort} />
+    {children}
+    <FooterComponent />
+  </div>
+);
+
+export function NavigateHomepage() {
   useAnalytics();
-  return (
-    <div className="App">
-      <Header />
-      <Intro />
-      <List />
-      <Footer />
-    </div>
-  );
+  return <AppLayout><IntroComponent /><HomepageComponent /></AppLayout>;
 }
 
-export function About() {
-  return (
-    <div className="App">
-      <Header />
-      <AboutText />
-      <Footer />
-    </div>
-  );
+export function NavigateAboutMe() {
+  return <AppLayout><AboutMeComponent /></AppLayout>;
 }
 
-export function AboutSite() {
-  return (
-    <div className="App">
-      <Header />
-      <SiteDesciprtion />
-      <Footer />
-    </div>
-  );
+
+export function NavigateAboutSite() {
+  return <AppLayout><AboutSiteComponent /></AppLayout>;
 }
 
-export function NotFoundPage() {
-  return (
-    <div className="App">
-      <Header />
-      <NotFound />
-      <Footer />
-    </div>
-  );
+export function NavigateNotFound() {
+  return <AppLayout><NotFoundComponent /></AppLayout>;
 }
 
-export function CV() {
-  return (
-    <div className="App">
-      <CVDocument />
-      <Footer />
-    </div>
-  );
+export function NavigateCVDisplay() {
+  return <AppLayout isHeaderShort={true}><CVDisplayComponent /></AppLayout>;
 }
 
-export function Misc() {
-  return (
-    <div className="App">
-      <Header />
-      <MiscList />
-      <Footer />
-    </div>
-  );
+export function NavigateMiscList() {
+  return <AppLayout><MiscListComponent /></AppLayout>;
 }
 
-export function Projects() {
-  return (
-    <div className="App">
-      <Header />
-      <ProjectList />
-      <Footer />
-    </div>
-  );
+export function NavigatePortfolioList() {
+  return <AppLayout><PorfolioListComponent /></AppLayout>;
 }
 
-export function ScreenLock() {
-  return (
-    <div className="App">
-      <Header />
-      <ScreenLockProject />
-      <Footer />
-    </div>
-  );
+export function NavigateScreenLockProject() {
+  return <AppLayout><ScreenLockProjectComponent /></AppLayout>;
 }
 
-export function HLTB() {
-  return (
-    <div className="App">
-      <Header />
-      <HLTBProject />
-      <Footer />
-    </div>
-  );
+export function NavigateHLTBProject() {
+  return <AppLayout><HTLBProjectComponent /></AppLayout>;
 }
 
-export function Balls() {
-  return (
-    <div className="App">
-      <Header />
-      <RazorBallsProject />
-      <Footer />
-    </div>
-  );
+export function NavigateRazorBallsProject() {
+  return <AppLayout><RazorBallsProjectComponent /></AppLayout>;
 }
 
-export default Home;
-
+export default NavigateHomepage;

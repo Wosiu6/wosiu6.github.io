@@ -1,0 +1,54 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #29374A;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.social-media a {
+  margin-right: 1rem;
+  color: inherit;
+}
+
+.social-media a:hover {
+  color: #ccc;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+.attributions {
+  position: absolute;
+  right: 0.1rem;
+  bottom: 0.1rem;
+  font-size: 0.7rem;
+}
+
+.attributions a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.attributions a:visited {
+  color: #ccc;
+}
+
+@media only screen and (max-width: 520px) {
+  .attributions{
+    position: relative;
+  }
+}

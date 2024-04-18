@@ -32,19 +32,6 @@ code {
   margin-bottom: 1rem;
 }
 
-.titleContainer h2 {
-  font-size: 1.2rem; /* Adjust font size as needed */
-  font-weight: bold;
-}
-
-.titleContainer{
-  margin-bottom: 1.5rem;
-  color: #cfcfcf; /* Adjust text color as needed */
-  border-bottom: 2px solid #484756; /* Accent color for underline */
-  padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
-  display: flex;
-}
-
 .backIcon{
   color: whitesmoke;
   margin-top: auto;

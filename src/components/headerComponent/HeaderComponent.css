@@ -1,0 +1,28 @@
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1.25rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    transition: all 1s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    border-bottom: black;
+    box-shadow: inset;
+  }
+
+  .shortHeader{
+    max-height: 0.5vh;
+  }
+  
+  .header-content {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
