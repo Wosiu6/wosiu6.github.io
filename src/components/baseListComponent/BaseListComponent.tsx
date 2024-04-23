@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 interface BaseListProps {
   items: Item[];
   title: string;
+  isBase?: boolean;
 }
 
 interface Item {
@@ -17,13 +18,15 @@ interface Item {
   openInNewPage: boolean;
 }
 
-const BaseListComponent: React.FC<BaseListProps> = ({ items, title }) => {
+const BaseListComponent: React.FC<BaseListProps> = ({ items, title, isBase }) => {
   return (
     <div className="container py-5">
       <div className='titleContainer'>
-        <Link to={'..'} className="backIcon">
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </Link>
+        {!isBase && (
+          <Link to={'..'} className="backIcon">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </Link>
+        )}
         <h2 className="text-center">{title}</h2>
       </div>
       <div className="row">

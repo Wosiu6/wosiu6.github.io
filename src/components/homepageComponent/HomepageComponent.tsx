@@ -38,7 +38,7 @@ const HomepageComponent: React.FC = () => {
   const title: string = 'And what has he been up to 👷‍♂️';
 
   return (
-    <BaseListComponent title={title} items={items} />
+    <BaseListComponent title={title} items={items} isBase={true}/>
   );
 };
 
