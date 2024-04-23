@@ -32,7 +32,7 @@ const BaseListComponent: React.FC<BaseListProps> = ({ items, title, isBase }) =>
       <div className="row">
         {items.map((item, index) => (
           <a
-            href={'#' + item.url}
+            href={item.openInNewPage ? item.url : `#${item.url}`} 
             target={item.openInNewPage ? "_blank" : ""}
             rel="noopener noreferrer"
             className="project-card h-100 text-decoration-none"
