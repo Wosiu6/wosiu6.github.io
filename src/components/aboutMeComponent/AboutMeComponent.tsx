@@ -21,8 +21,6 @@ const AboutText: React.FC = () => {
       </div>
       <a
         href={'#' + Paths.CV_DISPLAY}
-        target="_blank"
-        rel="noopener noreferrer"
         className="cvLink"
       >
         View My CV
