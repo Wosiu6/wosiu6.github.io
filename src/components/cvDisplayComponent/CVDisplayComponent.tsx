@@ -49,7 +49,7 @@ const CV: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="cvLink">CV Source Code</a>
-        <a href="cv.pdf"
+        <a href="Patryk_Wos_CV.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"
