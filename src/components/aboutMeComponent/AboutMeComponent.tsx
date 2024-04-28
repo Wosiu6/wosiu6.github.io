@@ -1,9 +1,8 @@
 import React from 'react';
 import '../BaseComponentStyle.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import TitleComponent from '../titleComponent/TitleComponent';
+import { Paths } from '../../Paths';
 
 const title: string = 'About';
 
@@ -21,7 +20,7 @@ const AboutText: React.FC = () => {
         </p>
       </div>
       <a
-        href="#/CV/"
+        href={'#' + Paths.CV_DISPLAY}
         target="_blank"
         rel="noopener noreferrer"
         className="cvLink"
