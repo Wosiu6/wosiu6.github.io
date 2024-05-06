@@ -13,6 +13,7 @@ import PorfolioListComponent from './components/portfolioListComponent/Portfolio
 import ScreenLockProjectComponent from './components/projectsComponents/ScreenLockProjectComponent';
 import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
 import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
+import CleanApiGamesComponent from './components/projectsComponents/CleanApiGamesComponent';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -63,6 +64,10 @@ export function NavigateScreenLockProject() {
 
 export function NavigateHLTBProject() {
   return <AppLayout><HTLBProjectComponent /></AppLayout>;
+}
+
+export function NavigateCleanAPIGamesProject() {
+  return <AppLayout><CleanApiGamesComponent /></AppLayout>;
 }
 
 export function NavigateRazorBallsProject() {

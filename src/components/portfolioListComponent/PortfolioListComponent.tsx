@@ -14,12 +14,13 @@ interface Item {
 const PorfolioListComponent: React.FC = () => {
   const items: Item[] = [
     {
-      title: 'HLTB .NET API',
-      description: 'HLTB API written in .NET',
-      url: Paths.HLTB_PROJECT,
-      icon: 'images/projectIcons/hltb.png',
+      title: 'CleanAPI - Games',
+      description: 'Clean API written in .NET',
+      url: Paths.CLEANAPI_GAMES_PROJECT,
+      icon: 'images/projectIcons/cleanGame.png',
       openInNewPage: false
     },
+    
     {
       title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
@@ -32,6 +33,13 @@ const PorfolioListComponent: React.FC = () => {
       description: 'Java',
       url: Paths.SCREEN_LOCK_PROJECT,
       icon: 'images/projectIcons/lock.png',
+      openInNewPage: false
+    },
+    {
+      title: 'HLTB .NET API',
+      description: 'HLTB API written in .NET',
+      url: Paths.HLTB_PROJECT,
+      icon: 'images/projectIcons/hltb.png',
       openInNewPage: false
     },
     {
