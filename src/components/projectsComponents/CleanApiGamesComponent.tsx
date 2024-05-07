@@ -6,7 +6,7 @@ const CleanApiGamesComponent: React.FC = () => {
     'cleanApi_games_1.png',
     'cleanApi_games_2.png'
   ];
-  const description = 'This is my attempt at writing a .NET MVC Clean Architecture API. Its purpose is to track user\'s games and related achievements. I wrote this using a startpoint to ensure best practices are used throughout the project.';
+  const description = 'This project implements a .NET MVC API adhering to Clean Architecture principles. It facilitates user game tracking and achievement management. The development leveraged a best-practice starting point to ensure a solid foundation and maintainability.';
   const name = 'CleanAPI - Games';
   const sourceUrl = 'https://github.com/Wosiu6/CleanAPI.Games';
 

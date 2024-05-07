@@ -36,7 +36,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
-      title: 'HLTB .NET API',
+      title: 'HLTB .NET API (Currently undergoing rewrite)',
       description: 'HLTB API written in .NET',
       url: Paths.HLTB_PROJECT,
       icon: 'images/projectIcons/hltb.png',

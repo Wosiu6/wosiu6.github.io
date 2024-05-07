@@ -1,30 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Zoom from 'react-medium-image-zoom'
 
 import 'react-medium-image-zoom/dist/styles.css'
 import './BaseProjectComponent.css';
 
 import TitleComponent from '../titleComponent/TitleComponent';
-
+import swal from 'sweetalert';
 
 interface BaseProjectProps {
   imageUrls: string[],
   description: string,
   name: string,
   sourceUrl: string,
-  hostUrl?: string
+  hostUrl?: string,
+  alertText?: string
 }
 
 const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
+  useEffect(() => {
+    if (props.alertText) swal(props.alertText);
+  }, []);
+  
   return (
     <div className="container py-5">
       <TitleComponent title={props.name} />
+
       <p>{props.description}</p>
 
       {props.imageUrls.length > 0 && (
         <ul className="image-list">
           {props.imageUrls.map((imageUrl) => (
-
             <li key={imageUrl}>
               <Zoom>
                 <img

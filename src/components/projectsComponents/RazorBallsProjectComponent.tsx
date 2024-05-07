@@ -6,7 +6,7 @@ const RazorBallsProjectComponent: React.FC = () => {
     'balls_1.png',
     'balls_2.png'
   ];
-  const description = 'This is a project that creates an utter abomination by combining physical simulations, C# and Blazor WASM. It is deployed automatically by GitHub Pages.';
+  const description = 'This project explores the unique intersection of physics simulations, C#, and Blazor WASM. It leverages GitHub Pages for automated deployment, offering a web-based platform for users to interact with these simulations.';
   const name = 'Razor Balls Simulation';
   const sourceUrl = 'https://github.com/Wosiu6/PatSite_Razor';
   const hostUrl = 'https://wosiu6.github.io/PatSite_Razor/ballSimulation';
