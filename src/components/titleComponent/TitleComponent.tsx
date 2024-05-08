@@ -5,17 +5,21 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 interface TitleProps {
   title: string;
+  isMainPage?: boolean;
 }
 
-const TitleComponent: React.FC<TitleProps> = ({ title }) => {
+const TitleComponent: React.FC<TitleProps> = (props) => {
   return (
     <div className='titleContainer'>
-      {(
+      {!props.isMainPage &&
         <Link to={-1 as any} className="backIcon">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
-      )}
-      <h2>{title}</h2>
+      }
+
+      {props.title &&
+        <h2>{props.title}</h2>
+      }
     </div>
   );
 };

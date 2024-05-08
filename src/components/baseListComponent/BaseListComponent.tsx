@@ -1,13 +1,11 @@
 import React from 'react';
 import './BaseListComponent.css';
-import { Link } from 'react-router-dom';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TitleComponent from '../titleComponent/TitleComponent';
 
 interface BaseListProps {
   items: Item[];
   title: string;
-  isBase?: boolean;
+  isMainPage?: boolean;
 }
 
 interface Item {
@@ -18,17 +16,10 @@ interface Item {
   openInNewPage: boolean;
 }
 
-const BaseListComponent: React.FC<BaseListProps> = ({ items, title, isBase }) => {
+const BaseListComponent: React.FC<BaseListProps> = ({ items, title, isMainPage }) => {
   return (
     <div className="container py-5">
-      <div className='titleContainer'>
-        {!isBase && (
-          <Link to={'..'} className="backIcon">
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </Link>
-        )}
-        <h2 className="text-center">{title}</h2>
-      </div>
+      <TitleComponent title={title} isMainPage={isMainPage}/>
       <div className="row">
         {items.map((item, index) => (
           <a

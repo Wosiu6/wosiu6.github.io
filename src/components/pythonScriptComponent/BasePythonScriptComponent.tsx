@@ -24,9 +24,8 @@ const BasePythonScriptComponent: React.FC<BasePythonScriptProps> = (props) => {
   return (
     <div className="container py-5">
       <TitleComponent title={props.name} />
-
       <p>{props.description}</p>
-
+      
       {props.imageUrls.length > 0 && (
         <ul className="image-list">
           {props.imageUrls.map((imageUrl) => (

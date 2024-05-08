@@ -22,7 +22,7 @@ const PythonScriptsListComponent: React.FC = () => {
     }
   ];
 
-  const title = "Some not so useful python scripts that I needed at some point.";
+  const title = "My kludgy Python scripts 🐍";
 
   return (
     <BaseListComponent items={items} title={title} />
