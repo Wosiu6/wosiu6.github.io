@@ -14,6 +14,8 @@ import ScreenLockProjectComponent from './components/projectsComponents/ScreenLo
 import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
 import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
 import CleanApiGamesComponent from './components/projectsComponents/CleanApiGamesComponent';
+import PythonScriptsListComponent from './components/pythonScriptsListComponent/PythonScriptsListComponent';
+import ExtractPhotosComponent from './components/pythonScriptComponent/ExtractPhotosComponent';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -72,6 +74,14 @@ export function NavigateCleanAPIGamesProject() {
 
 export function NavigateRazorBallsProject() {
   return <AppLayout><RazorBallsProjectComponent /></AppLayout>;
+}
+
+export function NavigatePythonScriptsProject() {
+  return <AppLayout><PythonScriptsListComponent /></AppLayout>;
+}
+
+export function NavigatePythonExtractPhotos() {
+  return <AppLayout><ExtractPhotosComponent /></AppLayout>;
 }
 
 export default NavigateHomepage;

@@ -20,12 +20,18 @@ const PorfolioListComponent: React.FC = () => {
       icon: 'images/projectIcons/cleanGame.png',
       openInNewPage: false
     },
-    
     {
       title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
       url: Paths.RAZOR_BALLS_PROJECT,
       icon: 'images/projectIcons/gravity.png',
+      openInNewPage: false
+    },
+    {
+      title: 'Python Scripts',
+      description: 'Various Python scripts',
+      url: Paths.PYTHON_SCRIPTS_PROJECT,
+      icon: 'images/projectIcons/python.png',
       openInNewPage: false
     },
     {

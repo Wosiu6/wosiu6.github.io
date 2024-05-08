@@ -12,4 +12,7 @@ export abstract class Paths {
   static readonly HLTB_PROJECT = Paths.PORTFOLIO_LIST + '/HLTB';
   static readonly RAZOR_BALLS_PROJECT = Paths.PORTFOLIO_LIST + '/RazorBalls';
   static readonly CLEANAPI_GAMES_PROJECT = Paths.PORTFOLIO_LIST + '/CleanAPIGames';
+  static readonly PYTHON_SCRIPTS_PROJECT = Paths.PORTFOLIO_LIST + '/PythonScripts';
+
+  static readonly PYTHON_EXTRACT_PHOTOS = Paths.PYTHON_SCRIPTS_PROJECT + '/ExtractPhotos';
 }

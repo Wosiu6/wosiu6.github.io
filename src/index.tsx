@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import { render } from 'react-dom';
-import {NavigateHomepage, NavigateAboutMe, NavigateMiscList, NavigateCVDisplay, NavigateAboutSite, NavigateNotFound, NavigatePortfolioList, NavigateScreenLockProject, NavigateHLTBProject, NavigateRazorBallsProject, NavigateCleanAPIGamesProject} from './App';
+import {NavigateHomepage, NavigateAboutMe, NavigateMiscList, NavigateCVDisplay, NavigateAboutSite, NavigateNotFound, NavigatePortfolioList, NavigateScreenLockProject, NavigateHLTBProject, NavigateRazorBallsProject, NavigateCleanAPIGamesProject, NavigatePythonScriptsProject, NavigatePythonExtractPhotos} from './App';
 import './index.css';
 import { Paths } from './Paths';
 
@@ -22,6 +22,8 @@ class App extends React.Component {
             <Route path={Paths.HLTB_PROJECT} element={<NavigateHLTBProject/>} />
             <Route path={Paths.RAZOR_BALLS_PROJECT} element={<NavigateRazorBallsProject/>} />
             <Route path={Paths.CLEANAPI_GAMES_PROJECT} element={<NavigateCleanAPIGamesProject/>} />
+            <Route path={Paths.PYTHON_SCRIPTS_PROJECT} element={<NavigatePythonScriptsProject/>} />
+            <Route path={Paths.PYTHON_EXTRACT_PHOTOS} element={<NavigatePythonExtractPhotos/>} />
             <Route path="*" element={<NavigateNotFound />} />
           </Routes>
         </div>
