@@ -26,9 +26,6 @@ const FooterComponent: React.FC = () => {
         <a href="https://www.last.fm/user/wosiu6" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLastfm} />
         </a>
-        <a href={'#' + Paths.CV_DISPLAY} title="CV" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFile} />
-        </a>
       </div>
       <div className="attributions">
         <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer" title="icons">Icons by Freepik</a>
