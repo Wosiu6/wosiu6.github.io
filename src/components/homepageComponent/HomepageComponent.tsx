@@ -2,18 +2,12 @@ import React from 'react';
 import './HomepageComponent.css';
 import { Paths } from '../../Paths';
 import BaseListComponent from '../baseListComponent/BaseListComponent';
-
-interface Item {
-  title: string;
-  description: string;
-  icon: string;
-  url: string;
-  openInNewPage: boolean;
-}
+import IListItem from '../../lib/interfaces/IListItem';
 
 const HomepageComponent: React.FC = () => {
-  const items: Item[] = [
+  const items: IListItem[] = [
     {
+      key: 'homepage_portfolio',
       title: 'Portfolio',
       description: 'portfolio',
       url: Paths.PORTFOLIO_LIST,
@@ -21,6 +15,7 @@ const HomepageComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'homepage_about',
       title: 'More about me',
       description: 'Meeee',
       url: Paths.ABOUT_ME,
@@ -28,6 +23,7 @@ const HomepageComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'homepage_mics',
       title: 'Misc.',
       description: 'Misc.',
       url: Paths.MISC_LIST,

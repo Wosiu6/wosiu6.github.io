@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, To } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-interface TitleProps {
+interface ITitleProps {
   title: string;
   isMainPage?: boolean;
 }
 
-const TitleComponent: React.FC<TitleProps> = (props) => {
+const TitleComponent: React.FC<ITitleProps> = (props) => {
   return (
     <div className='titleContainer'>
       {!props.isMainPage &&
-        <Link to={-1 as any} className="backIcon">
+        <Link to={-1 as To} className="backIcon">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
       }

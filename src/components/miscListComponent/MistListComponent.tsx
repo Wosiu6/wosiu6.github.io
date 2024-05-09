@@ -2,18 +2,12 @@ import React from 'react';
 
 import BaseListComponent from '../baseListComponent/BaseListComponent';
 import { Paths } from '../../Paths';
-
-interface Item {
-  title: string;
-  description: string;
-  icon: string;
-  url: string;
-  openInNewPage: boolean;
-}
+import IListItem from '../../lib/interfaces/IListItem';
 
 const MiscListComponent: React.FC = () => {
-  const items: Item[] = [
+  const items: IListItem[] = [
     {
+      key: 'misc_steam',
       title: 'What am I playing lately?',
       description: 'Steam brrr',
       url: 'https://steamcommunity.com/id/Wosiu6',
@@ -21,6 +15,7 @@ const MiscListComponent: React.FC = () => {
       openInNewPage: true
     },
     {
+      key: 'misc_about_site',
       title: 'About this site',
       description: 'PatSite',
       url: Paths.ABOUT_SITE,
@@ -28,6 +23,7 @@ const MiscListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'misc_robert',
       title: 'Robert Pattinson as Martin Martinaise?',
       description: 'Why not?',
       url: 'https://www.mycast.io/stories/hbo-s-disco-elysium-2024/roles/martin-martinaise/18771496/suggestions/robert-pattinson/24424418/',

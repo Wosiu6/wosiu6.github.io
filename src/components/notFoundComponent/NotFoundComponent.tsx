@@ -2,8 +2,7 @@ import React from 'react';
 import '../BaseComponentStyle.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faSkull } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import { faSkull } from '@fortawesome/free-solid-svg-icons'
 import TitleComponent from '../titleComponent/TitleComponent';
 
 const AboutText: React.FC = () => {

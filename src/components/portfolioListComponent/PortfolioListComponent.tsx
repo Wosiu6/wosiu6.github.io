@@ -2,18 +2,12 @@ import React from 'react';
 
 import BaseListComponent from '../baseListComponent/BaseListComponent';
 import { Paths } from '../../Paths';
-
-interface Item {
-  title: string;
-  description: string;
-  icon: string;
-  url: string;
-  openInNewPage: boolean;
-}
+import IListItem from '../../lib/interfaces/IListItem';
 
 const PorfolioListComponent: React.FC = () => {
-  const items: Item[] = [
+  const items: IListItem[] = [
     {
+      key: 'portfolio_clean_api',
       title: 'CleanAPI - Games',
       description: 'Clean API written in .NET',
       url: Paths.CLEANAPI_GAMES_PROJECT,
@@ -21,6 +15,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'portfolio_balls',
       title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
       url: Paths.RAZOR_BALLS_PROJECT,
@@ -28,6 +23,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'portfolio_python',
       title: 'Python Scripts',
       description: 'Various Python scripts',
       url: Paths.PYTHON_SCRIPTS_PROJECT,
@@ -35,6 +31,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'portfolio_screen_lock',
       title: 'Screen Lock Service',
       description: 'Java',
       url: Paths.SCREEN_LOCK_PROJECT,
@@ -42,6 +39,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'portfolio_hltb',
       title: 'HLTB .NET API (Currently undergoing rewrite)',
       description: 'HLTB API written in .NET',
       url: Paths.HLTB_PROJECT,
@@ -49,6 +47,7 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'portfolio_first_website',
       title: 'First Website',
       description: 'First website I have written as a university project.',
       url: 'https://patwos.web.app/',

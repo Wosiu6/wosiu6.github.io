@@ -2,18 +2,12 @@ import React from 'react';
 
 import BaseListComponent from '../baseListComponent/BaseListComponent';
 import { Paths } from '../../Paths';
-
-interface Item {
-  title: string;
-  description: string;
-  icon: string;
-  url: string;
-  openInNewPage: boolean;
-}
+import IListItem from '../../lib/interfaces/IListItem';
 
 const PythonScriptsListComponent: React.FC = () => {
-  const items: Item[] = [
+  const items: IListItem[] = [
     {
+      key: 'python_extract',
       title: 'Extract Photos',
       description: 'Script to extract rectangles',
       url: Paths.PYTHON_EXTRACT_PHOTOS,

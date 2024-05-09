@@ -1,8 +1,6 @@
 import React from 'react';
 import '../BaseComponentStyle.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import TitleComponent from '../titleComponent/TitleComponent';
 
 const title = 'About this site';
@@ -12,9 +10,9 @@ const SiteDesciprtion: React.FC = () => {
       <TitleComponent title={title} />
       <div className="row">
         <p>
-          The site's structure, optimalisation, UX and scripts could be improved dramatically.
+          The site&apos;s structure, optimalisation, UX and scripts could be improved dramatically.
           However, having said that, I am not going to put more time nor effort into this site anymore, I want to focus on my other projects.
-          You are free to explore this site's source code if you wish to have a go at improving it.
+          You are free to explore this site&apos;s source code if you wish to have a go at improving it.
         </p>
         <p>
           It deploys to github pages automatically using Actions that is why I push directly to main.

@@ -2,7 +2,7 @@ import './CVDisplayComponent.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { Document, Page, pdfjs } from "react-pdf";
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, To } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
@@ -40,11 +40,9 @@ const CV: React.FC = () => {
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons'>
-        <a>
-        <Link to={-1 as any} className="cvLink">
+        <Link to={-1 as To} className="cvLink">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
-        </a>
         <a href="https://www.overleaf.com/read/csrkvckzjnyk#96031f"
           target="_blank"
           rel="noopener noreferrer"

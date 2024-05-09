@@ -1,6 +1,8 @@
+import React from 'react';
+
 import './IntroComponent.css';
 
-const IntroComponent = () => {
+const IntroComponent: React.FC = () => {
   return (
     <div className="intro">
       <div className="content">

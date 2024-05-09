@@ -3,8 +3,6 @@ import './FooterComponent.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faLastfm, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
-import { Paths } from '../../Paths';
 
 const FooterComponent: React.FC = () => {
   return (

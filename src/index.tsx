@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import {NavigateHomepage, NavigateAboutMe, NavigateMiscList, NavigateCVDisplay, NavigateAboutSite, NavigateNotFound, NavigatePortfolioList, NavigateScreenLockProject, NavigateHLTBProject, NavigateRazorBallsProject, NavigateCleanAPIGamesProject, NavigatePythonScriptsProject, NavigatePythonExtractPhotos} from './App';
 import './index.css';
 import { Paths } from './Paths';
@@ -32,4 +32,6 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<App />);

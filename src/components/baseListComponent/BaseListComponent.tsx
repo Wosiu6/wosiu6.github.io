@@ -1,28 +1,16 @@
 import React from 'react';
 import './BaseListComponent.css';
 import TitleComponent from '../titleComponent/TitleComponent';
+import IBaseListProp from '../../lib/interfaces/IBaseListProp';
 
-interface BaseListProps {
-  items: Item[];
-  title: string;
-  isMainPage?: boolean;
-}
-
-interface Item {
-  title: string;
-  description: string;
-  icon: string;
-  url: string;
-  openInNewPage: boolean;
-}
-
-const BaseListComponent: React.FC<BaseListProps> = ({ items, title, isMainPage }) => {
+const BaseListComponent: React.FC<IBaseListProp> = ({ items, title, isMainPage }) => {
   return (
     <div className="container py-5">
       <TitleComponent title={title} isMainPage={isMainPage}/>
       <div className="row">
         {items.map((item, index) => (
           <a
+            key={item.key}
             href={item.openInNewPage ? item.url : `#${item.url}`} 
             target={item.openInNewPage ? "_blank" : ""}
             rel="noopener noreferrer"
