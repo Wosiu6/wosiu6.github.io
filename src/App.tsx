@@ -15,7 +15,7 @@ import HTLBProjectComponent from './components/projectsComponents/HTLBProjectCom
 import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
 import CleanApiGamesComponent from './components/projectsComponents/CleanApiGamesComponent';
 import PythonScriptsListComponent from './components/pythonScriptsListComponent/PythonScriptsListComponent';
-import ExtractPhotosComponent from './components/pythonScriptComponent/ExtractPhotosComponent';
+import ExtractPhotosComponent from './components/pythonScriptComponents/ExtractPhotosComponent';
 
 interface AppLayoutProps {
   children: React.ReactNode;

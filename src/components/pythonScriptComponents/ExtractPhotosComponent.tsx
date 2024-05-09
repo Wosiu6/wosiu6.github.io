@@ -1,4 +1,4 @@
-import BasePythonScriptComponent from './BasePythonScriptComponent';
+import BaseProjectComponent from '../projectsComponents/BaseProjectComponent';
 import React from 'react';
 
 const ExtractPhotosComponent: React.FC = () => {
@@ -12,7 +12,7 @@ const ExtractPhotosComponent: React.FC = () => {
   const sourceUrl = 'https://github.com/Wosiu6/extract_pictures';
 
   return (
-    <BasePythonScriptComponent
+    <BaseProjectComponent
       imageUrls={imageUrls}
       description={description}
       name={name}
