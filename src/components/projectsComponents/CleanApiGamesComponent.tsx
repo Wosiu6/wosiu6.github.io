@@ -8,7 +8,7 @@ const CleanApiGamesComponent: React.FC = () => {
   ];
   const description = 'This project implements a .NET MVC API adhering to Clean Architecture principles. It facilitates user game tracking and achievement management. The development leveraged a best-practice starting point to ensure a solid foundation and maintainability.';
   const name = 'CleanAPI - Games';
-  const sourceUrl = 'https://github.com/Wosiu6/CleanAPI.Games';
+  const sourceUrl = 'https://github.com/Wosiu6/clean-api-games';
 
   return (
     <BaseProject

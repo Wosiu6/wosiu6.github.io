@@ -7,7 +7,7 @@ const ScreenLockProjectComponent: React.FC = () => {
   ];
   const description = 'This project implements a security-focused screen lock service for Android devices. The service automatically locks the device when connected to an external display after a period of inactivity, enhancing data protection in unattended scenarios.';
   const name = 'Screen Lock Service';
-  const sourceUrl = 'https://github.com/Wosiu6/ScreenLock';
+  const sourceUrl = 'https://github.com/Wosiu6/screen-lock';
 
   return (
     <BaseProject

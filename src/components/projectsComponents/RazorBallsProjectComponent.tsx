@@ -8,8 +8,8 @@ const RazorBallsProjectComponent: React.FC = () => {
   ];
   const description = 'This project explores the unique intersection of physics simulations, C#, and Blazor WASM. It leverages GitHub Pages for automated deployment, offering a web-based platform for users to interact with these simulations.';
   const name = 'Razor Balls Simulation';
-  const sourceUrl = 'https://github.com/Wosiu6/PatSite_Razor';
-  const hostUrl = 'https://wosiu6.github.io/PatSite_Razor/ballSimulation';
+  const sourceUrl = 'https://wosiu6.github.io/pat-site-razor/';
+  const hostUrl = 'https://wosiu6.github.io/pat-site-razor/ballSimulation';
 
   return (
     <BaseProject
