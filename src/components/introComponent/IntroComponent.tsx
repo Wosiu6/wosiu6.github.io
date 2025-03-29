@@ -7,7 +7,7 @@ const IntroComponent: React.FC = () => {
     <div className="intro">
       <div className="content">
         <img src="images/avatar_de_rp.jpg" alt="Avatar" />
-        <h1>Patryk</h1>
+        <h1>Pat</h1>
       </div>
     </div>
   );
