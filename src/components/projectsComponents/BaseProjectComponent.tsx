@@ -8,7 +8,7 @@ import TitleComponent from '../titleComponent/TitleComponent';
 import swal from 'sweetalert';
 
 interface BaseProjectProps {
-  imageUrls: string[],
+  imageUrls?: string[],
   description: string,
   name: string,
   sourceUrl: string,
@@ -27,21 +27,7 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
 
       <p>{props.description}</p>
 
-      {props.imageUrls.length > 0 && (
-        <ul className="image-list">
-          {props.imageUrls.map((imageUrl) => (
-            <li key={imageUrl}>
-              <Zoom>
-                <img
-                  alt={props.name}
-                  src={'images/projects/' + imageUrl}
-                  width="150"
-                />
-              </Zoom>
-            </li>
-          ))}
-        </ul>
-      )}
+      {Images(props)}
 
       <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='cvLink'>
         View Source
@@ -56,5 +42,27 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
 
   );
 };
+
+function Images(props: BaseProjectProps) {
+  if (props.imageUrls && props.imageUrls.length > 0) {
+    return (
+      <ul className="image-list">
+        {props.imageUrls.map((imageUrl: string) => (
+          <li key={imageUrl}>
+            <Zoom>
+              <img
+                alt={props.name}
+                src={'images/projects/' + imageUrl}
+                width="150"
+              />
+            </Zoom>
+          </li>
+        ))}
+      </ul>
+    );
+  } else {
+    return <p style={{ fontSize: '0.7em', color: '#bbb' }}>No images available.</p>;
+  }
+}
 
 export default BaseProjectComponent;

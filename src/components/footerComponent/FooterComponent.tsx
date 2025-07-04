@@ -26,7 +26,7 @@ const FooterComponent: React.FC = () => {
         </a>
       </div>
       <div className="attributions">
-        <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer" title="icons">Icons by Freepik</a>
+        <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer" title="icons">Icons by Freepik</a>: <a href="licenses/license.pdf" title="license freepik">License</a>
       </div>
     </footer>
   );

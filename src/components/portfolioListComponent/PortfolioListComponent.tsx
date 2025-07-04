@@ -6,14 +6,7 @@ import IListItem from '../../lib/interfaces/IListItem';
 
 const PorfolioListComponent: React.FC = () => {
   const items: IListItem[] = [
-    {
-      key: 'portfolio_clean_api',
-      title: 'CleanAPI - Games',
-      description: 'Clean API written in .NET',
-      url: Paths.CLEANAPI_GAMES_PROJECT,
-      icon: 'images/projectIcons/cleanGame.png',
-      openInNewPage: false
-    },
+    
     {
       key: 'portfolio_balls',
       title: 'Physical Simulation',
@@ -23,11 +16,11 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
-      key: 'portfolio_python',
-      title: 'Python Scripts',
-      description: 'Various Python scripts',
-      url: Paths.PYTHON_SCRIPTS_PROJECT,
-      icon: 'images/projectIcons/python.png',
+      key: 'google_takeout',
+      title: 'Takeout Merger',
+      description: 'Google Takeout Merger for metadata- geolocation and time',
+      url: Paths.TAKEOUT_MERGER,
+      icon: 'images/projectIcons/takeout-merger.png',
       openInNewPage: false
     },
     {
@@ -36,6 +29,14 @@ const PorfolioListComponent: React.FC = () => {
       description: 'Java',
       url: Paths.SCREEN_LOCK_PROJECT,
       icon: 'images/projectIcons/lock.png',
+      openInNewPage: false
+    },
+    {
+      key: 'portfolio_python',
+      title: 'Python Scripts',
+      description: 'Various Python scripts',
+      url: Paths.PYTHON_SCRIPTS_PROJECT,
+      icon: 'images/projectIcons/python.png',
       openInNewPage: false
     },
     {

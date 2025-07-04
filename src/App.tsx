@@ -13,9 +13,9 @@ import PorfolioListComponent from './components/portfolioListComponent/Portfolio
 import ScreenLockProjectComponent from './components/projectsComponents/ScreenLockProjectComponent';
 import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
 import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
-import CleanApiGamesComponent from './components/projectsComponents/CleanApiGamesComponent';
 import PythonScriptsListComponent from './components/pythonScriptsListComponent/PythonScriptsListComponent';
 import ExtractPhotosComponent from './components/pythonScriptComponents/ExtractPhotosComponent';
+import TakeoutMergerComponent from './components/projectsComponents/TakeoutMergerComponent';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -68,8 +68,8 @@ export function NavigateHLTBProject() {
   return <AppLayout><HTLBProjectComponent /></AppLayout>;
 }
 
-export function NavigateCleanAPIGamesProject() {
-  return <AppLayout><CleanApiGamesComponent /></AppLayout>;
+export function NavigateTakeoutMerger() {
+  return <AppLayout><TakeoutMergerComponent /></AppLayout>;
 }
 
 export function NavigateRazorBallsProject() {
