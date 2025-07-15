@@ -7,8 +7,8 @@ const HTLBProjectComponent: React.FC = () => {
     'hltb_2.png',
     'hltb_1.png'
   ];
-  const description = 'This project represents my initial foray into developing .NET APIs. It focuses on data extraction from the hidden HLTB (How Long To Beat) endpoints.  A revised version is currently underway to optimize the approach.';
-  const alertText = 'The project is undergoing a rewrite. The initial decision to utilize an API is being reconsidered in favor of a different approach.';
+  const description = 'This project focuses on data extraction from the private HLTB (How Long To Beat) API endpoints written for Microsoft.';
+  const alertText = 'The project had been put on hold, use just for the way of extracting data from the API.';
   const name = 'HLTB API';
   const sourceUrl = 'https://github.com/Wosiu6/';
 
