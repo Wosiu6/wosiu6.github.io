@@ -1,42 +1,76 @@
-html {
-  /* this makes sure the padding and the border is included in the box sizing */
+:root {
+  --midnight-black: #000000;
+  --burgundy-shadow: #880425;
+  --crimson-flame: #c5003c;
+  --golden-zest: #f3e600;
+  --lemon-blaze: #fee801;
+  --aqua-breeze: #55ead4;
+  --teal-tide: #39c4b6;
+  --sky-sapphire: #54c1e6;
+  --olive-glow: #9a9f17;
+  --abyssal-navy: #00060e;
+
+  --footer-bg: var(--abyssal-navy);
+  --text-primary: whitesmoke;
+  --text-hover: var(--lemon-blaze);
+  --accent-color: var(--crimson-flame);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  --gradient-bg: linear-gradient(135deg, var(--burgundy-shadow) -50%, var(--midnight-black) 100%);
+  --gradient-card: linear-gradient(135deg, var(--teal-tide) -100%, var(--abyssal-navy) 100%);
+  --gradient-card-hover: linear-gradient(135deg, var(--sky-sapphire) 0%, var(--abyssal-navy) 100%);
+
+  --border-radius: 0.625rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --footer-height: 2rem;
+  --font-size-sm: clamp(0.65rem, 1.5vw, 0.7rem);
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  overflow-y: inherit;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212529;
-  color: whitesmoke;
+  background: var(--gradient-bg);
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: var(--footer-height);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .container {
   margin-left: 40vw;
   margin-right: 40vw;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+  padding-bottom: var(--footer-height);
 }
 
-.backIcon{
-  color: whitesmoke;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 2%;
+[data-rmiz-modal-overlay="visible"] {
+  background: var(--gradient-bg) !important;
+  opacity: 0.95 !important;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -81,8 +115,12 @@ code {
   }
 }
 
-@media only screen and (max-height: 1000px){
-  body{
-    padding-bottom: 3rem;
+@media only screen and (max-height: 1000px) {
+  body {
+    padding-bottom: calc(var(--footer-height) + var(--spacing-md));
+  }
+
+  .container {
+    padding-bottom: calc(var(--footer-height) + var(--spacing-md));
   }
 }

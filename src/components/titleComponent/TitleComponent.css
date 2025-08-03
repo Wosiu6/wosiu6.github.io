@@ -1,0 +1,29 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-color);
+  box-shadow: 0 4px 10px -5px var(--shadow-color);
+}
+
+.titleContainer h2 {
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-shadow: 0 0 8px rgba(var(--text-primary), 0.5);
+}
+
+.backIcon {
+  color: var(--text-primary);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  flex-shrink: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.backIcon:hover {
+  color: var(--text-hover);
+}

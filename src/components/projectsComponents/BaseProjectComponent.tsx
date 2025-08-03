@@ -20,7 +20,7 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
   useEffect(() => {
     if (props.alertText) swal(props.alertText);
   }, []);
-  
+
   return (
     <div className="container py-5">
       <TitleComponent title={props.name} />
@@ -28,16 +28,17 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
       <p>{props.description}</p>
 
       {Images(props)}
-
-      <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='cvLink'>
-        View Source
-      </a>
-
-      {props.hostUrl && (
-        <a href={props.hostUrl} target="_blank" rel="noreferrer noopener" className="cvLink">
-          Go to project
+      <div className="buttons">
+        <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='link-button'>
+          View Source
         </a>
-      )}
+
+        {props.hostUrl && (
+          <a href={props.hostUrl} target="_blank" rel="noreferrer noopener" className="link-button">
+            Go to project
+          </a>
+        )}
+      </div>
     </div>
 
   );

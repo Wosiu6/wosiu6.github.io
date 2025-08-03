@@ -7,7 +7,9 @@ import { faTwitter, faLinkedin, faLastfm, faFacebook, faGithub } from '@fortawes
 const FooterComponent: React.FC = () => {
   return (
     <footer className="text-center bg-dark text-white py-3">
-      <p>© {new Date().getFullYear()} Patryk Wos</p>
+      <div className="credits">
+        <p>© {new Date().getFullYear()} Patryk Wos</p>
+      </div>
       <div className="social-media">
         <a href="https://www.facebook.com/wosiu6" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />

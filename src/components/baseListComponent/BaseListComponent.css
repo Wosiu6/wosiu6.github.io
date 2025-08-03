@@ -1,55 +1,54 @@
 .project-card {
-    background-color: #5D666F;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out;
+    background: var(--gradient-card);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* For Safari support */
 }
 
 .project-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background: var(--gradient-card-hover);
+}
+
+.project-card:focus-within {
+    outline: 2px solid var(--text-hover);
+    outline-offset: 2px;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 24px;
     display: flex;
-    /* Allow stacking elements vertically */
+    flex-direction: row;
     justify-content: space-between;
-    /* Align items horizontally */
     align-items: center;
-    /* Align items vertically */
-    border: #141C23;
-    border-style: solid;
-    box-shadow: #312412;
+    gap: 16px;
+    border: none;
+    background: transparent;
 }
 
 .project-icon {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
-    /* Ensures full image coverage within the icon area */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+    transform: scale(1.1);
 }
 
 .card-title {
-    font-weight: bold;
-    color: #141C23;
-    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
 }
 
 .card-title:hover {
-    color: #312412;
-    /* Change title color on hover */
+    color: var(--text-hover);
 }
-
-.titleContainer h2 {
-    font-size: 1.2rem; /* Adjust font size as needed */
-    font-weight: bold;
-  }
-  
-  .titleContainer{
-    margin-bottom: 1.5rem;
-    color: #cfcfcf; /* Adjust text color as needed */
-    border-bottom: 2px solid #484756; /* Accent color for underline */
-    padding-bottom: 0.5rem; /* Adjust padding to accommodate underline */
-    display: flex;
-  }

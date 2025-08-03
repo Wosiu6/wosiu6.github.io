@@ -13,16 +13,10 @@
     background-size: cover;
     border-bottom: black;
     box-shadow: inset;
+    margin-bottom: 1vh;
   }
 
   .shortHeader{
     max-height: 0.5vh;
-  }
-  
-  .header-content {
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
   }
   

@@ -20,8 +20,6 @@
 
 .buttons {
   display: inline-flex;
-}
-
-.cvLink{
-  margin-left: 1em;
+  flex-wrap: space-between;
+  gap: 1em;
 }

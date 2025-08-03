@@ -1,10 +1,26 @@
-.cvLink {
-    color: #bada55; /* Cyberpunk green */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: 1px solid #bada55;
-    display: inline-block;
-    margin-top: 1rem;
-  }
+.link-button{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-top: var(--spacing-md);
+  color: var(--golden-zest);
+  border: 1px solid var(--lemon-blaze);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 8px rgba(var(--lemon-blaze), 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  color: var(--midnight-black);
+  background-color: var(--lemon-blaze);
+  box-shadow: 0 0 15px rgba(var(--lemon-blaze), 0.9), 0 0 30px rgba(var(--lemon-blaze), 0.5);
+  transform: translateY(-2px);
+}
+
+.link-button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 5px rgba(var(--lemon-blaze), 0.7);
+}

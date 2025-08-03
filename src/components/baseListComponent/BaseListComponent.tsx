@@ -28,6 +28,7 @@ const BaseListComponent: React.FC<IBaseListProp> = ({ items, title, isMainPage }
         ))}
       </div>
     </div>
+
   );
 };
 

@@ -11,17 +11,18 @@ const AboutText: React.FC = () => {
     <div className="container py-5">
       <TitleComponent title={title} />
       <div className="row">
-        <p>When I&apos;m not crafting software solutions, I&apos;m likely:
-          <ul>
-            <li><b>Staying active:</b> Whether it&apos;s hitting the gym, exploring nature, or soaking up some sun, taking care of my physical health is important to me.</li>
-            <li><b>Futuristic:</b> I&apos;m a total tech enthusiast, always curious about the latest breakthroughs. AI, high-performance computing - anything that pushes the boundaries excites me! (Think less Cyberpunk 2077 launch and more seamless innovation.)</li>
-            <li><b>Building (beyond code):</b> I enjoy hands-on creation, whether it&apos;s building a new website, tackling a personal project, or experimenting with new technology.</li>
-          </ul>
-        </p>
+        <div className="col">
+          <p className="lead">
+            I am always looking for new challanges. If you think we'd get along or I could contribute to your project, feel free to reach out anywhere you like.
+            <br></br>
+            <br></br>
+            Thats it.
+          </p>
+        </div>
       </div>
       <a
         href={'#' + Paths.CV_DISPLAY}
-        className="cvLink"
+        className="link-button"
       >
         View My CV
       </a>

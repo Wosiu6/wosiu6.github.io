@@ -40,18 +40,18 @@ const CV: React.FC = () => {
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons'>
-        <Link to={-1 as To} className="cvLink">
+        <Link to={-1 as To} className="link-button">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
         <a href="https://www.overleaf.com/read/csrkvckzjnyk#96031f"
           target="_blank"
           rel="noopener noreferrer"
-          className="cvLink">CV Source Code</a>
+          className="link-button">CV Source Code</a>
         <a href="Patryk_Wos_CV.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"
-          className="cvLink">Download CV</a>
+          className="link-button">Download CV</a>
       </div>
     </div>
   );
