@@ -12,7 +12,7 @@ const PorfolioListComponent: React.FC = () => {
       title: 'Physical Simulation',
       description: 'Razor website I have written to learn something new.',
       url: Paths.RAZOR_BALLS_PROJECT,
-      icon: 'images/projectIcons/gravity.png',
+      icon: 'images/icons/gravity.png',
       openInNewPage: false
     },
     {
@@ -20,7 +20,7 @@ const PorfolioListComponent: React.FC = () => {
       title: 'Takeout Merger',
       description: 'Google Takeout Merger for metadata- geolocation and time',
       url: Paths.TAKEOUT_MERGER,
-      icon: 'images/projectIcons/takeout-merger.png',
+      icon: 'images/icons/takeout-merger.png',
       openInNewPage: false
     },
     {
@@ -28,7 +28,7 @@ const PorfolioListComponent: React.FC = () => {
       title: 'Screen Lock Service',
       description: 'Java',
       url: Paths.SCREEN_LOCK_PROJECT,
-      icon: 'images/projectIcons/lock.png',
+      icon: 'images/icons/lock.png',
       openInNewPage: false
     },
     {
@@ -36,7 +36,7 @@ const PorfolioListComponent: React.FC = () => {
       title: 'Python Scripts',
       description: 'Various Python scripts',
       url: Paths.PYTHON_SCRIPTS_PROJECT,
-      icon: 'images/projectIcons/python.png',
+      icon: 'images/icons/python.png',
       openInNewPage: false
     },
     {
@@ -44,16 +44,8 @@ const PorfolioListComponent: React.FC = () => {
       title: 'HLTB API Cracking',
       description: 'HLTB API written in .NET',
       url: Paths.HLTB_PROJECT,
-      icon: 'images/projectIcons/hltb.png',
+      icon: 'images/icons/hltb.png',
       openInNewPage: false
-    },
-    {
-      key: 'portfolio_first_website',
-      title: 'First Website',
-      description: 'First website I have written as a university project.',
-      url: 'https://patwos.web.app/',
-      icon: 'images/projectIcons/computer.png',
-      openInNewPage: true
     },
   ];
 

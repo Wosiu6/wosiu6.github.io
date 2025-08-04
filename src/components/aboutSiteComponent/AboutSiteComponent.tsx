@@ -28,7 +28,7 @@ const SiteDesciprtion: React.FC = () => {
         href="https://github.com/Wosiu6/wosiu6.github.io"
         target="_blank"
         rel="noopener noreferrer"
-        className="link-button"
+        className="link-button link-button--black"
       >
         Source Code
       </a>

@@ -6,7 +6,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     overflow: hidden;
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* For Safari support */
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .project-card:hover {

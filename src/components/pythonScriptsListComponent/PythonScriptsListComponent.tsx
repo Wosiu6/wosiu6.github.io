@@ -11,12 +11,12 @@ const PythonScriptsListComponent: React.FC = () => {
       title: 'Extract Photos',
       description: 'Script to extract rectangles',
       url: Paths.PYTHON_EXTRACT_PHOTOS,
-      icon: 'images/projectIcons/extractPhotos.png',
+      icon: 'images/icons/extractPhotos.png',
       openInNewPage: false
     }
   ];
 
-  const title = "My kludgy Python scripts 🐍";
+  const title = "I don't even know why I put it here, I don't really like pyton 🐍";
 
   return (
     <BaseListComponent items={items} title={title} />

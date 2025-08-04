@@ -1,4 +1,4 @@
-.link-button {
+.link-button{
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
@@ -24,3 +24,4 @@
   transform: translateY(0);
   box-shadow: 0 0 5px rgba(var(--lemon-blaze), 0.7);
 }
+

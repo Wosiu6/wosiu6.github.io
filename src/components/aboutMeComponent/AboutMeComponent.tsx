@@ -1,10 +1,22 @@
 import React from 'react';
 import '../BaseComponentStyle.css'
+import './AboutMeComponent.css'
 
 import TitleComponent from '../titleComponent/TitleComponent';
 import { Paths } from '../../Paths';
+import { IImagesProps, Images } from '../../functions/ImagesZoom';
 
 const title: string = 'About';
+
+interface AboutMeImagesProps extends IImagesProps { }
+
+const props: AboutMeImagesProps = {
+  name: 'About Me gif',
+  imageUrls: [
+    'gifs/silverhand.gif',
+    'gifs/jackie.gif',
+  ]
+}
 
 const AboutText: React.FC = () => {
   return (
@@ -22,10 +34,18 @@ const AboutText: React.FC = () => {
       </div>
       <a
         href={'#' + Paths.CV_DISPLAY}
-        className="link-button"
+        className="link-button link-button--black"
       >
         View My CV
       </a>
+      <div className='also-like'>
+        <br></br>
+        <br></br>
+        <p>Oh yeah, I also like cyberpunk.</p>
+        <br></br>
+        {Images(props)}
+      </div>
+      
     </div>
   );
 }

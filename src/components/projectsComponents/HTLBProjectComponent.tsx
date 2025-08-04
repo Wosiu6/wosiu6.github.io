@@ -4,8 +4,8 @@ import React from 'react';
 
 const HTLBProjectComponent: React.FC = () => {
   const imageUrls = [
-    'hltb_2.png',
-    'hltb_1.png'
+    'projects/hltb_2.png',
+    'projects/hltb_1.png'
   ];
   const description = 'This project focuses on data extraction from the private HLTB (How Long To Beat) API endpoints written for Microsoft.';
   const alertText = 'The project had been put on hold, use just for the way of extracting data from the API.';

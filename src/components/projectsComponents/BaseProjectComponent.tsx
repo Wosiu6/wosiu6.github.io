@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react';
-import Zoom from 'react-medium-image-zoom'
 
 import 'react-medium-image-zoom/dist/styles.css'
 import './BaseProjectComponent.css';
 
 import TitleComponent from '../titleComponent/TitleComponent';
 import swal from 'sweetalert';
+import { IImagesProps, Images } from '../../functions/ImagesZoom';
 
-interface BaseProjectProps {
-  imageUrls?: string[],
+interface BaseProjectProps extends IImagesProps {
   description: string,
-  name: string,
   sourceUrl: string,
   hostUrl?: string,
   alertText?: string
@@ -26,15 +24,15 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
       <TitleComponent title={props.name} />
 
       <p>{props.description}</p>
-
+      
       {Images(props)}
-      <div className="buttons">
-        <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='link-button'>
+      <div className="buttons-group">
+        <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='link-button link-button--black'>
           View Source
         </a>
 
         {props.hostUrl && (
-          <a href={props.hostUrl} target="_blank" rel="noreferrer noopener" className="link-button">
+          <a href={props.hostUrl} target="_blank" rel="noreferrer noopener" className="link-button link-button--black">
             Go to project
           </a>
         )}
@@ -44,26 +42,6 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
   );
 };
 
-function Images(props: BaseProjectProps) {
-  if (props.imageUrls && props.imageUrls.length > 0) {
-    return (
-      <ul className="image-list">
-        {props.imageUrls.map((imageUrl: string) => (
-          <li key={imageUrl}>
-            <Zoom>
-              <img
-                alt={props.name}
-                src={'images/projects/' + imageUrl}
-                width="150"
-              />
-            </Zoom>
-          </li>
-        ))}
-      </ul>
-    );
-  } else {
-    return <p style={{ fontSize: '0.7em', color: '#bbb' }}>No images available.</p>;
-  }
-}
+
 
 export default BaseProjectComponent;

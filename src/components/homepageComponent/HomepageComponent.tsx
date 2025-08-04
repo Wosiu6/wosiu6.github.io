@@ -8,10 +8,10 @@ const HomepageComponent: React.FC = () => {
   const items: IListItem[] = [
     {
       key: 'homepage_portfolio',
-      title: 'Portfolio',
-      description: 'portfolio',
+      title: 'Projects',
+      description: 'projects I have worked on',
       url: Paths.PORTFOLIO_LIST,
-      icon: 'images/projectIcons/portfolio.png',
+      icon: 'images/icons/portfolio.png',
       openInNewPage: false
     },
     {
@@ -19,7 +19,7 @@ const HomepageComponent: React.FC = () => {
       title: 'More about me',
       description: 'Meeee',
       url: Paths.ABOUT_ME,
-      icon: 'images/projectIcons/man.png',
+      icon: 'images/icons/man.png',
       openInNewPage: false
     },
     {
@@ -27,7 +27,7 @@ const HomepageComponent: React.FC = () => {
       title: 'Misc.',
       description: 'Misc.',
       url: Paths.MISC_LIST,
-      icon: 'images/projectIcons/box.png',
+      icon: 'images/icons/box.png',
       openInNewPage: false
     }
   ];

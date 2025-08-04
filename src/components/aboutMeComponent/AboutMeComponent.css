@@ -1,0 +1,19 @@
+.silverhand-gif {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20vh;
+    margin-right: 30vh;
+    scale: 1.5;
+    box-shadow: 0 0px 2px var(--shadow-color);
+}
+
+.jackie-gif {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20vh;
+    margin-left: 20vh;
+    scale: 1.5;
+    box-shadow: 0 0px 2px var(--shadow-color);
+}
