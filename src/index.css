@@ -9,12 +9,14 @@
   --sky-sapphire: #54c1e6;
   --olive-glow: #9a9f17;
   --abyssal-navy: #00060e;
+  --nean-pink: #d600ff;
+  --cyberpunk-purple: #bd00ff;
 
   --footer-bg: var(--abyssal-navy);
   --text-primary: whitesmoke;
   --text-hover: var(--lemon-blaze);
   --accent-color: var(--crimson-flame);
-  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow-color: var(--cyberpunk-purple);
   --border-color: rgba(255, 255, 255, 0.08);
 
   --gradient-bg: linear-gradient(135deg, var(--burgundy-shadow) -50%, var(--midnight-black) 100%);
@@ -48,6 +50,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--gradient-bg);
+  background-color: var(--gradient-bg);
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
@@ -70,6 +73,7 @@ code {
 
 [data-rmiz-modal-overlay="visible"] {
   background: var(--gradient-bg) !important;
+  background-color: var(--gradient-bg) !important;
   opacity: 0.95 !important;
 }
 

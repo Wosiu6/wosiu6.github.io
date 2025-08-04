@@ -19,7 +19,7 @@ const TitleComponent: React.FC<ITitleProps> = (props) => {
       }
 
       {props.title &&
-        <h2>{props.title}</h2>
+        <h2 className='title-text'>{props.title}</h2>
       }
     </div>
   );

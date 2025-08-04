@@ -14,6 +14,7 @@
     border-bottom: black;
     box-shadow: inset;
     margin-bottom: 1vh;
+    box-shadow: 0 2px 5px var(--shadow-color);
   }
 
   .shortHeader{

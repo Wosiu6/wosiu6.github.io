@@ -31,7 +31,7 @@ const HomepageComponent: React.FC = () => {
       openInNewPage: false
     }
   ];
-  const title: string = 'And what has he been up to 👷‍♂️';
+  const title: string = 'Who?';
 
   return (
     <BaseListComponent title={title} items={items} isMainPage={true}/>

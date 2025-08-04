@@ -41,7 +41,7 @@ const PorfolioListComponent: React.FC = () => {
     },
     {
       key: 'portfolio_hltb',
-      title: 'HLTB .NET API (Currently undergoing rewrite)',
+      title: 'HLTB API Cracking',
       description: 'HLTB API written in .NET',
       url: Paths.HLTB_PROJECT,
       icon: 'images/projectIcons/hltb.png',

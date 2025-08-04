@@ -6,7 +6,7 @@
   margin-bottom: var(--spacing-md);
   color: var(--text-primary);
   border-bottom: 2px solid var(--accent-color);
-  box-shadow: 0 4px 10px -5px var(--shadow-color);
+  box-shadow: 0 4px 2px -2px var(--shadow-color);
 }
 
 .titleContainer h2 {

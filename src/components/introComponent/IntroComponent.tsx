@@ -3,20 +3,24 @@ import './IntroComponent.css';
 
 interface IntroProps {
   imageSrc?: string;
-  title?: string;
+  shortName?: string;
+  restOfTheName?: string;
   imageAlt?: string;
 }
 
 const IntroComponent: React.FC<IntroProps> = ({
   imageSrc = '/images/avatar_de_rp.jpg',
-  title = 'Pat',
+  shortName = 'Pat',
+  restOfTheName = 'ryk',
   imageAlt = 'Avatar',
 }) => {
   return (
     <div className="intro">
       <div className="intro-content">
         <img src={imageSrc} alt={imageAlt} className="intro-image" />
-        <h1 className="intro-title">{title}</h1>
+        <div className='intro-name'>
+          <h1 className="intro-short">{shortName}<span className='intro-rest'>{restOfTheName}</span></h1>
+        </div>
       </div>
     </div>
   );

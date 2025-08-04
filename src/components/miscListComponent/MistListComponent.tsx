@@ -32,7 +32,7 @@ const MiscListComponent: React.FC = () => {
     },
   ];
 
-const title: string = "Misc things, get to know me better.  ";
+const title: string = "Misc things, get to know me better";
   return (
       <BaseListComponent items={items} title={title}/>
   );
