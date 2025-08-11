@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HeaderComponent.css';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   isShort: boolean;
@@ -23,7 +24,9 @@ const HeaderComponent: React.FC<HeaderProps> = ({ isShort }) => {
   }, [imageIndex, images]);
 
   return (
-    <header className={isShort ? "shortHeader header" : "header"} style={{ backgroundImage: `url(images/${currentImage})` }} />
+    <Link to="/">
+      <header className={isShort ? "shortHeader header" : "header"} style={{ backgroundImage: `url(images/${currentImage})` }} />
+    </Link>
   );
 };
 

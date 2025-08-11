@@ -19,5 +19,6 @@
 
   .shortHeader{
     max-height: 0.5vh;
+    cursor: pointer;
   }
   
