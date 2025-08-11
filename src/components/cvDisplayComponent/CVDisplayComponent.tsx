@@ -39,7 +39,7 @@ const CV: React.FC = () => {
       <Document file="Patryk_Wos_CV.pdf">
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
-      <div className='buttons'>
+      <div className='buttons-group'>
         <Link to={-1 as To} className="link-button link-button--black">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
