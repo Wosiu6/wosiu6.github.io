@@ -5,7 +5,7 @@ import './BaseProjectComponent.css';
 
 import TitleComponent from '../titleComponent/TitleComponent';
 import swal from 'sweetalert';
-import { IImagesProps, Images } from '../../functions/ImagesZoom';
+import { IImagesProps, GetImages } from '../../functions/Images';
 
 interface BaseProjectProps extends IImagesProps {
   description: string,
@@ -25,7 +25,7 @@ const BaseProjectComponent: React.FC<BaseProjectProps> = (props) => {
 
       <p>{props.description}</p>
       
-      {Images(props)}
+      {GetImages(props)}
       <div className="buttons-group">
         <a href={props.sourceUrl} target="_blank" rel="noreferrer noopener" className='link-button link-button--black'>
           View Source

@@ -2,9 +2,9 @@ import './CVDisplayComponent.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { Document, Page, pdfjs } from "react-pdf";
 import React, { useEffect, useState } from "react";
-import { Link, To } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { OnBackClicked } from '../../functions/BackPressHandler';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -40,9 +40,9 @@ const CV: React.FC = () => {
         <Page pageNumber={1} scale={1.4} renderTextLayer={false} renderAnnotationLayer={true} />
       </Document>
       <div className='buttons-group'>
-        <Link to={-1 as To} className="link-button link-button--black">
+        <a onClick={OnBackClicked} className="link-button link-button--black">
           <FontAwesomeIcon icon={faArrowLeft} />
-        </Link>
+        </a>
         <a href="https://www.overleaf.com/read/csrkvckzjnyk#96031f"
           target="_blank"
           rel="noopener noreferrer"

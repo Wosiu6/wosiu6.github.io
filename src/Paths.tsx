@@ -15,4 +15,6 @@ export abstract class Paths {
   static readonly PYTHON_SCRIPTS_PROJECT = Paths.PORTFOLIO_LIST + '/PythonScripts';
 
   static readonly PYTHON_EXTRACT_PHOTOS = Paths.PYTHON_SCRIPTS_PROJECT + '/ExtractPhotos';
+
+  static readonly BASE = 'wosiu6.github.io';
 }

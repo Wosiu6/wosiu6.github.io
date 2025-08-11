@@ -4,7 +4,7 @@ import './AboutMeComponent.css'
 
 import TitleComponent from '../titleComponent/TitleComponent';
 import { Paths } from '../../Paths';
-import { IImagesProps, Images } from '../../functions/ImagesZoom';
+import { IImagesProps, GetImages } from '../../functions/Images';
 
 const title: string = 'About';
 
@@ -43,7 +43,7 @@ const AboutText: React.FC = () => {
         <br></br>
         <p>Oh yeah, I also like cyberpunk.</p>
         <br></br>
-        {Images(props)}
+        {GetImages(props)}
       </div>
       
     </div>

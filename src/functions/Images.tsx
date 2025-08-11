@@ -5,7 +5,7 @@ export interface IImagesProps {
   name: string,
 }
 
-export function Images(props: IImagesProps) {
+export function GetImages(props: IImagesProps) {
   if (props.imageUrls && props.imageUrls.length > 0) {
     return (
       <div className="image-group">
