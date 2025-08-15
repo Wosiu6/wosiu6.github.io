@@ -10,8 +10,8 @@ const PorfolioListComponent: React.FC = () => {
     {
       key: 'portfolio_balls',
       title: 'Physical Simulation',
-      description: 'Razor website I have written to learn something new.',
-      url: Paths.RAZOR_BALLS_PROJECT,
+      description: 'Blazor website I have written to learn something new.',
+      url: Paths.BLAZOR_BALLS_PROJECT,
       icon: 'images/icons/gravity.png',
       openInNewPage: false
     },

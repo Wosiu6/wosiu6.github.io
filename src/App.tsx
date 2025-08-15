@@ -12,7 +12,7 @@ import MiscListComponent from './components/miscListComponent/MistListComponent'
 import PorfolioListComponent from './components/portfolioListComponent/PortfolioListComponent';
 import ScreenLockProjectComponent from './components/projectsComponents/ScreenLockProjectComponent';
 import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
-import RazorBallsProjectComponent from './components/projectsComponents/RazorBallsProjectComponent';
+import BlazorBallsProjectComponent from './components/projectsComponents/BlazorBallsProjectComponent';
 import PythonScriptsListComponent from './components/pythonScriptsListComponent/PythonScriptsListComponent';
 import ExtractPhotosComponent from './components/pythonScriptComponents/ExtractPhotosComponent';
 import TakeoutMergerComponent from './components/projectsComponents/TakeoutMergerComponent';
@@ -72,8 +72,8 @@ export function NavigateTakeoutMerger() {
   return <AppLayout><TakeoutMergerComponent /></AppLayout>;
 }
 
-export function NavigateRazorBallsProject() {
-  return <AppLayout><RazorBallsProjectComponent /></AppLayout>;
+export function NavigateBlazorBallsProject() {
+  return <AppLayout><BlazorBallsProjectComponent /></AppLayout>;
 }
 
 export function NavigatePythonScriptsProject() {

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import { createRoot } from 'react-dom/client';
-import { NavigateHomepage, NavigateAboutMe, NavigateMiscList, NavigateCVDisplay, NavigateAboutSite, NavigateNotFound, NavigatePortfolioList, NavigateScreenLockProject, NavigateHLTBProject, NavigateRazorBallsProject, NavigatePythonScriptsProject, NavigatePythonExtractPhotos, NavigateTakeoutMerger } from './App';
+import { NavigateHomepage, NavigateAboutMe, NavigateMiscList, NavigateCVDisplay, NavigateAboutSite, NavigateNotFound, NavigatePortfolioList, NavigateScreenLockProject, NavigateHLTBProject, NavigateBlazorBallsProject, NavigatePythonScriptsProject, NavigatePythonExtractPhotos, NavigateTakeoutMerger } from './App';
 import './index.css';
 import { Paths } from './Paths';
 
@@ -20,7 +20,7 @@ class App extends React.Component {
             <Route path={Paths.PORTFOLIO_LIST} element={<NavigatePortfolioList/>} />
             <Route path={Paths.SCREEN_LOCK_PROJECT} element={<NavigateScreenLockProject/>} />
             <Route path={Paths.HLTB_PROJECT} element={<NavigateHLTBProject/>} />
-            <Route path={Paths.RAZOR_BALLS_PROJECT} element={<NavigateRazorBallsProject/>} />
+            <Route path={Paths.BLAZOR_BALLS_PROJECT} element={<NavigateBlazorBallsProject/>} />
             <Route path={Paths.TAKEOUT_MERGER} element={<NavigateTakeoutMerger/>} />
             <Route path={Paths.PYTHON_SCRIPTS_PROJECT} element={<NavigatePythonScriptsProject/>} />
             <Route path={Paths.PYTHON_EXTRACT_PHOTOS} element={<NavigatePythonExtractPhotos/>} />
