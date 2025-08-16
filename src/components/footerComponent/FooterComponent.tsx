@@ -3,6 +3,7 @@ import './FooterComponent.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faLastfm, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 const FooterComponent: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const FooterComponent: React.FC = () => {
           <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href="https://twitter.com/wosiu6" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faX} />
         </a>
         <a href="https://github.com/wosiu6" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
