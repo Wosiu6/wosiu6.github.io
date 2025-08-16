@@ -16,7 +16,7 @@ const PythonScriptsListComponent: React.FC = () => {
     }
   ];
 
-  const title = "I don't even know why I put it here, I don't really like pyton 🐍";
+  const title = "Simple scripts I needed for something at some point 🐍";
 
   return (
     <BaseListComponent items={items} title={title} />
