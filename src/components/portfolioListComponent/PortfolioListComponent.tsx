@@ -24,6 +24,14 @@ const PorfolioListComponent: React.FC = () => {
       openInNewPage: false
     },
     {
+      key: 'games_api',
+      title: 'Games API',
+      description: '.NET, C#, MediatR, Minimal API, Swagger',
+      url: Paths.GAMES_API_PROJECT,
+      icon: 'images/icons/games-api.png',
+      openInNewPage: false
+    },
+    {
       key: 'portfolio_screen_lock',
       title: 'Screen Lock Service',
       description: 'Java',
