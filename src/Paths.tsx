@@ -9,6 +9,7 @@ export abstract class Paths {
 
   static readonly PORTFOLIO_LIST = '/Portfolio';
   static readonly SCREEN_LOCK_PROJECT = Paths.PORTFOLIO_LIST + '/ScreenLock';
+  static readonly GAMES_API_PROJECT = Paths.PORTFOLIO_LIST + '/GamesApi';
   static readonly HLTB_PROJECT = Paths.PORTFOLIO_LIST + '/HLTB';
   static readonly BLAZOR_BALLS_PROJECT = Paths.PORTFOLIO_LIST + '/BlazorBalls';
   static readonly TAKEOUT_MERGER = Paths.PORTFOLIO_LIST + '/TakeoutMerger';

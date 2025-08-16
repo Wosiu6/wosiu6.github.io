@@ -12,6 +12,7 @@ import MiscListComponent from './components/miscListComponent/MistListComponent'
 import PorfolioListComponent from './components/portfolioListComponent/PortfolioListComponent';
 import ScreenLockProjectComponent from './components/projectsComponents/ScreenLockProjectComponent';
 import HTLBProjectComponent from './components/projectsComponents/HTLBProjectComponent';
+import GamesApiProjectComponent from './components/projectsComponents/GamesApiProjectComponent';
 import BlazorBallsProjectComponent from './components/projectsComponents/BlazorBallsProjectComponent';
 import PythonScriptsListComponent from './components/pythonScriptsListComponent/PythonScriptsListComponent';
 import ExtractPhotosComponent from './components/pythonScriptComponents/ExtractPhotosComponent';
@@ -66,6 +67,10 @@ export function NavigateScreenLockProject() {
 
 export function NavigateHLTBProject() {
   return <AppLayout><HTLBProjectComponent /></AppLayout>;
+}
+
+export function NavigateGamesApiProject() {
+  return <AppLayout><GamesApiProjectComponent /></AppLayout>;
 }
 
 export function NavigateTakeoutMerger() {
